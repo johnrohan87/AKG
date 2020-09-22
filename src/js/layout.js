@@ -7,7 +7,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import { NavbarMain } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { HeaderSection } from "./component/header_section";
 import { FeatureS7 } from "./component/feature_s7";
@@ -25,7 +25,7 @@ const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
-					<Navbar />
+					<NavbarMain />
 					<Switch>
 						<Route exact path="/">
 							<Home />
