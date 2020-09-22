@@ -11,6 +11,9 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { HeaderSection } from "./component/header_section";
 import { FeatureS7 } from "./component/feature_s7";
+import { FeatureS1 } from "./component/feature_s1";
+import { FeatureS2 } from "./component/feature_s2";
+import { FeatureS8 } from "./component/feature_s8";
 
 //create your first component
 const Layout = () => {

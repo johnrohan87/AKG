@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
-import BG4 from "../../img/background-4.jpg";
+import Homes from "../../img/AKG_homes.jpg";
 
 export const FeatureS7 = () => {
 	return (
 		<section className="features-section-7 content-half background-light">
 			<div className="container-half container-half-left background-light" />
-			<div className="container-half container-half-right cover" style={{ backgroundImage: { BG4 } }} />
+			<div
+				className="container-half container-half-right cover"
+				style={{ backgroundImage: "url(" + Homes + ")" }}
+			/>
 
 			<div className="container">
 				<div className="row section-separator text-left">
