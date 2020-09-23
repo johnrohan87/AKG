@@ -8,6 +8,7 @@ import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { NavbarMain } from "./component/navbar";
+import { Gallery } from "./component/gallery";
 import { Footer } from "./component/footer";
 import { HeaderSection } from "./component/header_section";
 import { FeatureS7 } from "./component/feature_s7";

@@ -6,11 +6,23 @@ import { FeatureS7 } from "../component/feature_s7";
 import { FeatureS1 } from "../component/feature_s1";
 import { FeatureS2 } from "../component/feature_s2";
 import { FeatureS8 } from "../component/feature_s8";
+
+import { Gallery } from "../component/gallery";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 import AKG_Home from "../../img/AKG_home.jpg";
 import AKG_Home2 from "../../img/AKG_home2.jpg";
 import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
 import { Carousel } from "react-bootstrap";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { EffectFade } from "swiper";
+
+import "swiper/swiper.scss";
+import "swiper/components/effect-fade/effect-fade.scss";
+
+SwiperCore.use([EffectFade]);
 
 /*
 import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
@@ -26,10 +38,11 @@ import "@brainhubeu/react-carousel/lib/style.css";
 			<img src={AKG_Home} className="responsive" style={{ height: "500px" }} />
 			<img src={AKG_Home3} className="responsive" style={{ height: "500px" }} />
 			<img src={AKG_Home2} className="responsive" style={{ height: "500px" }} />
-		</Carousel>*/
+        </Carousel>*/
 
 export const Home = () => (
 	<div className="text-center mt-5">
+		<Gallery />
 		<HeaderSection />
 		<Carousel interval={1000} slide={true} touch={true}>
 			<Carousel.Item>

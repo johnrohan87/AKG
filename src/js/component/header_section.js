@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
 
+import { useEffect } from "react";
+
 export const HeaderSection = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<section className="header-section-1 bg-image-1 header-js" id="header">
 			<div className="overlay-color">
