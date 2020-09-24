@@ -19,7 +19,7 @@ import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-boots
 export const NavbarMain = () => {
 	return (
 		<Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+			<Navbar.Brand href="#home">AKG Roofing and Specialty Services</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="mr-auto">

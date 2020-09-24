@@ -18,10 +18,10 @@ export const Gallery = () => {
 			mouseTrackingEnabled={true}
 			playButtonEnabled={true}
 			autoHeight={true}>
-			<img src={AKG_Home} onDragStart={handleOnDragStart} className="yours-custom-class" />
-			<img src={AKG_Home2} onDragStart={handleOnDragStart} className="yours-custom-class" />
-			<img src={AKG_Home3} onDragStart={handleOnDragStart} className="yours-custom-class" />
-			<img src={AKG_Homes} onDragStart={handleOnDragStart} className="yours-custom-class" />
+			<img src={AKG_Home} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
+			<img src={AKG_Home2} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
+			<img src={AKG_Home3} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
+			<img src={AKG_Homes} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
 		</AliceCarousel>
 	);
 };

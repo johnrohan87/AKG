@@ -42,18 +42,33 @@ import "@brainhubeu/react-carousel/lib/style.css";
 
 export const Home = () => (
 	<div className="text-center mt-5">
-		<Gallery />
 		<HeaderSection />
-		<Carousel interval={1000} slide={true} touch={true}>
+		<Carousel
+			interval={2000}
+			slide={true}
+			touch={true}
+			pause={false}
+			keyboard={true}
+			style={{ maxHeight: "500px" }}>
 			<Carousel.Item>
-				<img className="d-block w-100" src={AKG_Home} alt="First slide" />
+				<img
+					className="img-fluid rounded mx-auto d-block w-100"
+					src={AKG_Home}
+					alt="First slide"
+					style={{ maxHeight: "500px" }}
+				/>
 				<Carousel.Caption>
 					<h3>First slide label</h3>
 					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
-				<img className="d-block w-100" src={AKG_Home2} alt="Third slide" />
+				<img
+					className="img-fluid rounded mx-auto d-block w-100"
+					src={AKG_Home2}
+					alt="Third slide"
+					style={{ maxHeight: "500px" }}
+				/>
 
 				<Carousel.Caption>
 					<h3>Second slide label</h3>
@@ -61,7 +76,12 @@ export const Home = () => (
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
-				<img className="d-block w-100" src={AKG_Home3} alt="Third slide" />
+				<img
+					className="img-fluid rounded mx-auto d-block w-100"
+					src={AKG_Home3}
+					alt="Third slide"
+					style={{ maxHeight: "500px" }}
+				/>
 
 				<Carousel.Caption>
 					<h3>Third slide label</h3>

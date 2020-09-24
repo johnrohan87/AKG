@@ -17,7 +17,7 @@ export const FeatureS7 = () => {
 				<div className="row section-separator text-left">
 					<div className="col-md-6">
 						<div className="inner">
-							<h2 className="section-heading">C.E.O. AKG Roofing and Specialty Services, INC.</h2>
+							<h2 className="section-heading">AKG Roofing and Specialty Services, INC.</h2>
 							<div className="detail">
 								<p>
 									AKG was founded in 1977, licensed in Dade and Broward county in 1981, and then state
