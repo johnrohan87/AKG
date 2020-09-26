@@ -12,7 +12,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			pageUI: {
+				NAVBAR: {
+					classname: "Test",
+					height: "0"
+				},
+				FOOTER: {
+					classname: "Test",
+					height: "0"
+				}
+			}
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -37,6 +47,46 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			returnComponentHeight: componentName => {
+				const tmpStore = getStore();
+				for (var item in tmpStore) {
+					if (tmpStore.hasOwnProperty(item)) {
+						if ((item = "pageUI")) {
+							var currentComponent = tmpStore[item];
+							//console.log(tmpStore[item]);
+							for (var key in currentComponent) {
+								//console.log("key = " + key + " currentComponent = " + currentComponent);
+								if ((key = componentName)) {
+									return tmpStore[item][key].height;
+								}
+							}
+						}
+					}
+				}
+			},
+			updateComponentHeight: (componentName, componentHeight) => {
+				const tmpStore = getStore();
+				for (var item in tmpStore) {
+					if (tmpStore.hasOwnProperty(item)) {
+						if ((item = "pageUI")) {
+							var currentComponent = tmpStore[item];
+							//console.log(tmpStore[item]);
+							for (var key in currentComponent) {
+								//console.log("key = " + key + " currentComponent = " + currentComponent);
+								if ((key = componentName)) {
+									//console.dir(currentComponent);
+									//console.log(tmpStore[item][key]);
+									tmpStore[item][key].height = componentHeight;
+									//console.log(tmpStore[item][key].height);
+								}
+							}
+						}
+					}
+				}
+
+				console.log(tmpStore);
+				setStore(tmpStore);
 			}
 		}
 	};

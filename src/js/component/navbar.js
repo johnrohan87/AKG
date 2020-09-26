@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
+import { Context } from "../store/appContext";
 
 /*
 <Link to="/demo">
@@ -17,9 +18,21 @@ import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-boots
 */
 
 export const NavbarMain = () => {
+	const [height, setHeight] = useState(0);
+	const ref = useRef(null);
+	const { store, actions } = useContext(Context);
+
+	useEffect(
+		() => {
+			setHeight(ref.current.clientHeight);
+			actions.updateComponentHeight("NAVBAR", height);
+		},
+		[height]
+	);
+
 	return (
-		<Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-			<Navbar.Brand href="#home">AKG Roofing and Specialty Services</Navbar.Brand>
+		<Navbar collapseOnSelect expand="lg" bg="light" variant="light" ref={ref}>
+			<Navbar.Brand href="#home">AKG Roofing and Specialty Services - {height}</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="mr-auto">

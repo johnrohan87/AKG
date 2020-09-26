@@ -1,6 +1,7 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
+import "../../styles/js-image-slider.css";
 import { HeaderSection } from "../component/header_section";
 import { FeatureS7 } from "../component/feature_s7";
 import { FeatureS1 } from "../component/feature_s1";
@@ -14,17 +15,14 @@ import AKG_Home from "../../img/AKG_home.jpg";
 import AKG_Home2 from "../../img/AKG_home2.jpg";
 import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
-import { Carousel } from "react-bootstrap";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { EffectFade } from "swiper";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
-import "swiper/swiper.scss";
-import "swiper/components/effect-fade/effect-fade.scss";
+import { useEffect, useState, useContext } from "react";
+import { Context } from "../store/appContext";
 
-SwiperCore.use([EffectFade]);
-
-import { useEffect, useState } from "react";
+//import JSSOR from "../jssor.slider.js";
 
 /*
 import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
@@ -41,19 +39,21 @@ import "@brainhubeu/react-carousel/lib/style.css";
 			<img src={AKG_Home3} className="responsive" style={{ height: "500px" }} />
 			<img src={AKG_Home2} className="responsive" style={{ height: "500px" }} />
         </Carousel>*/
+var navHeight = 0;
 
 export const Home = () => {
 	const [offset, setOffset] = useState(0);
+	const { store, actions } = useContext(Context);
 
 	useEffect(
 		() => {
-			//window.scrollTo(0, 0);
-
 			function handleScroll() {
 				setOffset(window.pageYOffset);
 			}
 			window.addEventListener("scroll", handleScroll);
 
+			navHeight = actions.returnComponentHeight("NAVBAR");
+			//console.log("navHeight = " + navHeight);
 			return () => {
 				window.removeEventListener("scroll", handleScroll);
 			};
@@ -62,17 +62,11 @@ export const Home = () => {
 	);
 
 	return (
-		<div className="text-center mt-5">
-			<Carousel
-				interval={2000}
-				slide={true}
-				touch={true}
-				pause={false}
-				keyboard={true}
-				style={{ maxHeight: "700px" }}>
-				<Carousel.Item>
+		<div className="text-center">
+			<Carousel showArrows={true} showThumbs={false} autoPlay={true} dynamicHeight={true}>
+				<div className="bg-white">
 					<img
-						className="img-fluid rounded mx-auto d-block w-100"
+						className="img-fluid rounded mx-auto d-block w-100 h-100"
 						src={AKG_Home}
 						alt="First slide"
 						style={{
@@ -80,12 +74,24 @@ export const Home = () => {
 							transform: `translateY(${offset * 0.5}px)`
 						}}
 					/>
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
+					<h3
+						className="centeredIMGh3"
+						style={{
+							transform: `translateY(${offset * 0.5}px)`
+						}}>
+						First slide label
+					</h3>
+					<div>
+						<p
+							className="centeredIMGp"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+				</div>
+				<div className="bg-white">
 					<img
 						className="img-fluid rounded mx-auto d-block w-100"
 						src={AKG_Home2}
@@ -96,13 +102,24 @@ export const Home = () => {
 							transform: `translateY(${offset * 0.5}px)`
 						}}
 					/>
-
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
+					<div>
+						<h3
+							className="centeredIMGh3"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Second slide label
+						</h3>
+						<p
+							className="centeredIMGp"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+				</div>
+				<div className="bg-white">
 					<img
 						className="img-fluid rounded mx-auto d-block w-100"
 						src={AKG_Home3}
@@ -113,12 +130,23 @@ export const Home = () => {
 							transform: `translateY(${offset * 0.5}px)`
 						}}
 					/>
-
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
+					<div>
+						<h3
+							className="centeredIMGh3"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Third slide label
+						</h3>
+						<p
+							className="centeredIMGp"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						</p>
+					</div>
+				</div>
 			</Carousel>
 			<HeaderSection />
 			<FeatureS7 />

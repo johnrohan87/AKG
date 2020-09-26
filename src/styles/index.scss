@@ -1,4 +1,18 @@
 
+div > .centeredIMGh3{
+    color: #686868;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+div > .centeredIMGp{
+    color: #686868;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+
+
 /*********************** Demo - 3 *******************/
 .box3{box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
 .box3 .box-content,.box3:after,.box3:before{position:absolute;left:7%;right:7%;transition:all .3s}
