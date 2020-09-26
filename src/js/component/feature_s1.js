@@ -5,7 +5,7 @@ import LogoDark from "../../img/logo-dark.png";
 import BG4 from "../../img/background-4.jpg";
 import Home3 from "../../img/AKG_home3.jpg";
 
-export const FeatureS1 = () => {
+export const FeatureS1 = props => {
 	return (
 		<section className="features-section-1 relative background-semi-dark" id="features">
 			<div className="container mt-40">
@@ -13,7 +13,10 @@ export const FeatureS1 = () => {
 				<div className="row mt-30">
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
-							<img src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-1.jpg" />
+							<img
+								className="img-fluid"
+								src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-1.jpg"
+							/>
 							<div className="box-content">
 								<h3 className="title">Williamson</h3>
 								<span className="post">Web Developer</span>
@@ -34,7 +37,10 @@ export const FeatureS1 = () => {
 					</div>
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
-							<img src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-2.jpg" />
+							<img
+								className="img-fluid"
+								src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-2.jpg"
+							/>
 							<div className="box-content">
 								<h3 className="title">Kristiana</h3>
 								<span className="post">Web Designer</span>
@@ -55,7 +61,10 @@ export const FeatureS1 = () => {
 					</div>
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
-							<img src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-3.jpg" />
+							<img
+								className="img-fluid"
+								src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-3.jpg"
+							/>
 							<div className="box-content">
 								<h3 className="title">Kristiana</h3>
 								<span className="post">Web Designer</span>
@@ -91,27 +100,17 @@ export const FeatureS1 = () => {
 								<div className="inner background-light box3">
 									<i className="icon features-icon icons8-clock" />
 
-									<div className="box-content">
-										<h3 className="title">Williamson</h3>
-										<span className="post">Web Developer</span>
-										<p className="description">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
-											pariatur qui.
-										</p>
-										<ul className="icon">
-											<li>
-												<a href="#" className="fa fa-search" />
-											</li>
-											<li>
-												<a href="#" className="fa fa-link" />
-											</li>
-										</ul>
-									</div>
+									<h3 className="title">Williamson</h3>
+
+									<p className="description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur
+										qui.
+									</p>
 								</div>
 							</div>
 
 							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light">
+								<div className="inner background-light box3">
 									<i className="icon features-icon icons8-bullish" />
 									<h6 className="title">Dynamic Growth</h6>
 									<div className="detail">
@@ -124,7 +123,7 @@ export const FeatureS1 = () => {
 							</div>
 
 							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light">
+								<div className="inner background-light box3">
 									<i className="icon features-icon icons8-calendar" />
 									<h6 className="title">Weekly Report</h6>
 									<div className="detail">
@@ -137,7 +136,7 @@ export const FeatureS1 = () => {
 							</div>
 
 							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light">
+								<div className="inner background-light box3">
 									<i className="icon features-icon icons8-coins" />
 									<h6 className="title">Well Promoted</h6>
 									<div className="detail">
@@ -150,7 +149,7 @@ export const FeatureS1 = () => {
 							</div>
 
 							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light">
+								<div className="inner background-light box3">
 									<i className="icon features-icon icons8-wine-glass" />
 									<h6 className="title">Most Popular</h6>
 									<div className="detail">
@@ -163,7 +162,7 @@ export const FeatureS1 = () => {
 							</div>
 
 							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light">
+								<div className="inner background-light box3">
 									<i className="icon features-icon icons8-privacy" />
 									<h6 className="title">Follows Law</h6>
 									<div className="detail">

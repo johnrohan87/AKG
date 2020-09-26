@@ -63,7 +63,14 @@ export const Home = () => {
 
 	return (
 		<div className="text-center">
-			<Carousel showArrows={true} showThumbs={false} autoPlay={true} dynamicHeight={true}>
+			<Carousel
+				showArrows={true}
+				showThumbs={false}
+				autoPlay={true}
+				dynamicHeight={true}
+				infiniteLoop={true}
+				stopOnHover={false}
+				swipeable={true}>
 				<div className="bg-white">
 					<img
 						className="img-fluid rounded mx-auto d-block w-100 h-100"
@@ -150,7 +157,7 @@ export const Home = () => {
 			</Carousel>
 			<HeaderSection />
 			<FeatureS7 />
-			<FeatureS1 />
+			<FeatureS1 props={offset} />
 			<FeatureS2 />
 			<FeatureS8 />
 		</div>
