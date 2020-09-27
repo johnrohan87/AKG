@@ -8,6 +8,9 @@ import AKG_Metal from "../../img/AKG_metal.jpg";
 import AKG_Plastic from "../../img/AKG_plastic.jpg";
 import AKG_Tiles from "../../img/AKG_tiles.jpg";
 import AKG_Tiles2 from "../../img/AKG_tiles2.jpg";
+import Firestone_Hat from "../../img/Firestone/Firestone_Hat.png";
+import Firestone_Hat2 from "../../img/Firestone/Firestone_Hat2.png";
+import Firestone_Logo from "../../img/Firestone/Firestone_Logo.png";
 
 export const FeatureS1 = props => {
 	return (
@@ -92,14 +95,42 @@ export const FeatureS1 = props => {
 					<div className="col-xs-12 features-item">
 						<div className="row">
 							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light box3">
+								<div
+									className="inner background-light box3"
+									style={{
+										backgroundImage: "url(" + Firestone_Hat2 + ")",
+										backgroundSize: "cover"
+									}}>
 									<i className="icon features-icon icons8-clock" />
+									<div
+										style={{
+											backgroundColor: "rgba(255, 255, 255, 0.3)",
+											height: "5em",
+											width: "15em"
+										}}>
+										<div
+											style={{
+												backgroundImage: "url(" + Firestone_Logo + ")",
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												height: "100%",
+												width: "100%"
+											}}
+										/>
+									</div>
 
-									<h3 className="title">Williamson</h3>
-
+									<br />
+									<br />
+									<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+										<div className="title" style={{ wordWrap: "break-word" }}>
+											EPDM TPO POLYISO
+										</div>
+									</h5>
+									<br />
+									<br />
 									<p className="description">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur
-										qui.
+										With superior durability, flexibility and UV resistance, RubberGard™ EPDM is the
+										smart roofing solution for any application.
 									</p>
 								</div>
 							</div>
