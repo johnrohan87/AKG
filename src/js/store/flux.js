@@ -85,7 +85,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 				}
 
-				console.log(tmpStore);
+				//console.log(tmpStore);
 				setStore(tmpStore);
 			}
 		}

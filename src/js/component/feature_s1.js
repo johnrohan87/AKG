@@ -4,6 +4,10 @@ import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
 import BG4 from "../../img/background-4.jpg";
 import Home3 from "../../img/AKG_home3.jpg";
+import AKG_Metal from "../../img/AKG_metal.jpg";
+import AKG_Plastic from "../../img/AKG_plastic.jpg";
+import AKG_Tiles from "../../img/AKG_tiles.jpg";
+import AKG_Tiles2 from "../../img/AKG_tiles2.jpg";
 
 export const FeatureS1 = props => {
 	return (
@@ -13,10 +17,7 @@ export const FeatureS1 = props => {
 				<div className="row mt-30">
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
-							<img
-								className="img-fluid"
-								src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-1.jpg"
-							/>
+							<img className="img-fluid" src={AKG_Plastic} />
 							<div className="box-content">
 								<h3 className="title">Williamson</h3>
 								<span className="post">Web Developer</span>
@@ -37,10 +38,7 @@ export const FeatureS1 = props => {
 					</div>
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
-							<img
-								className="img-fluid"
-								src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-2.jpg"
-							/>
+							<img className="img-fluid" src={AKG_Tiles} />
 							<div className="box-content">
 								<h3 className="title">Kristiana</h3>
 								<span className="post">Web Designer</span>
@@ -61,10 +59,7 @@ export const FeatureS1 = props => {
 					</div>
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
-							<img
-								className="img-fluid"
-								src="http://bestjquery.com/tutorial/hover-effect/demo169/images/img-3.jpg"
-							/>
+							<img className="img-fluid" src={AKG_Tiles2} />
 							<div className="box-content">
 								<h3 className="title">Kristiana</h3>
 								<span className="post">Web Designer</span>

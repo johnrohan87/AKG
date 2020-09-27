@@ -1,27 +1,110 @@
 import React from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
+import { useEffect, useState, useContext } from "react";
+import { Context } from "../store/appContext";
 
 import AKG_Home from "../../img/AKG_home.jpg";
 import AKG_Home2 from "../../img/AKG_home2.jpg";
 import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
 
-export const Gallery = () => {
-	const handleOnDragStart = e => e.preventDefault();
+export const Gallery = options => {
+	const [offset, setOffset] = useState(0);
+	const { store, actions } = useContext(Context);
+
+	() => {
+		console.log({ options });
+	};
+
 	return (
-		<AliceCarousel
-			autoPlayInterval={2000}
-			autoPlayDirection="rtl"
-			autoPlay={true}
-			fadeOutAnimation={true}
-			mouseTrackingEnabled={true}
-			playButtonEnabled={true}
-			autoHeight={true}>
-			<img src={AKG_Home} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
-			<img src={AKG_Home2} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
-			<img src={AKG_Home3} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
-			<img src={AKG_Homes} onDragStart={handleOnDragStart} className="img-fluid rounded mx-auto d-block" />
-		</AliceCarousel>
+		<div>
+			<Carousel>
+				<div className="bg-white">
+					<img
+						className="img-fluid rounded mx-auto d-block w-100 h-100"
+						src={AKG_Home}
+						alt="First slide"
+						style={{
+							maxHeight: "700px",
+							transform: `translateY(${offset * 0.5}px)`
+						}}
+					/>
+					<h3
+						className="centeredIMGh3"
+						style={{
+							transform: `translateY(${offset * 0.5}px)`
+						}}>
+						First slide label
+					</h3>
+					<div>
+						<p
+							className="centeredIMGp"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+				</div>
+				<div className="bg-white">
+					<img
+						className="img-fluid rounded mx-auto d-block w-100"
+						src={AKG_Home2}
+						alt="Third slide"
+						style={{
+							maxHeight: "700px",
+
+							transform: `translateY(${offset * 0.5}px)`
+						}}
+					/>
+					<div>
+						<h3
+							className="centeredIMGh3"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Second slide label
+						</h3>
+						<p
+							className="centeredIMGp"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+				</div>
+				<div className="bg-white">
+					<img
+						className="img-fluid rounded mx-auto d-block w-100"
+						src={AKG_Home3}
+						alt="Third slide"
+						style={{
+							maxHeight: "700px",
+
+							transform: `translateY(${offset * 0.5}px)`
+						}}
+					/>
+					<div>
+						<h3
+							className="centeredIMGh3"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Third slide label
+						</h3>
+						<p
+							className="centeredIMGp"
+							style={{
+								transform: `translateY(${offset * 0.5}px)`
+							}}>
+							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						</p>
+					</div>
+				</div>
+			</Carousel>
+		</div>
 	);
 };
