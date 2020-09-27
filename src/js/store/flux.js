@@ -21,7 +21,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 				FOOTER: {
 					classname: "Test",
 					height: "0"
-				}
+				},
+				OFFSET: "0"
 			}
 		},
 		actions: {
@@ -79,14 +80,40 @@ const getState = ({ getStore, getActions, setStore }) => {
 									//console.log(tmpStore[item][key]);
 									tmpStore[item][key].height = componentHeight;
 									//console.log(tmpStore[item][key].height);
+									//console.log(tmpStore);
+									setStore(tmpStore);
 								}
 							}
 						}
 					}
 				}
+			},
+			returnOffset: () => {
+				var currentComponent = "OFFSET";
+				const tmpStore = getStore();
+				for (var item in tmpStore) {
+					if (tmpStore.hasOwnProperty(item)) {
+						if ((item = "pageUI")) {
+							var currentComponent = tmpStore[item];
 
-				//console.log(tmpStore);
-				setStore(tmpStore);
+							return tmpStore[item]["OFFSET"];
+						}
+					}
+				}
+			},
+			applyOffset: offset => {
+				var currentComponent = "OFFSET";
+				const tmpStore = getStore();
+				for (var item in tmpStore) {
+					if (tmpStore.hasOwnProperty(item)) {
+						if ((item = "pageUI")) {
+							var currentComponent = tmpStore[item];
+
+							tmpStore[item]["OFFSET"] = offset;
+							setStore(tmpStore);
+						}
+					}
+				}
 			}
 		}
 	};

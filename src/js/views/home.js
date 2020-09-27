@@ -19,16 +19,6 @@ import { Context } from "../store/appContext";
 
 var navHeight = 0;
 
-var options = {
-	showArrows: true,
-	showThumbs: false,
-	autoPlay: true,
-	dynamicHeight: true,
-	infiniteLoop: true,
-	stopOnHover: false,
-	swipeable: true
-};
-
 export const Home = () => {
 	const [offset, setOffset] = useState(0);
 	const { store, actions } = useContext(Context);
@@ -37,6 +27,7 @@ export const Home = () => {
 		() => {
 			function handleScroll() {
 				setOffset(window.pageYOffset);
+				actions.applyOffset(offset);
 			}
 			window.addEventListener("scroll", handleScroll);
 
@@ -51,7 +42,7 @@ export const Home = () => {
 
 	return (
 		<div className="text-center">
-			<Gallery options={options} />
+			<Gallery props={offset} />
 			<HeaderSection />
 			<FeatureS7 />
 			<FeatureS1 props={offset} />

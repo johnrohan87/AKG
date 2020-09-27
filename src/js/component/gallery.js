@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -10,17 +11,29 @@ import AKG_Home2 from "../../img/AKG_home2.jpg";
 import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
 
-export const Gallery = options => {
+export const Gallery = props => {
 	const [offset, setOffset] = useState(0);
 	const { store, actions } = useContext(Context);
 
-	() => {
-		console.log({ options });
-	};
+	useEffect(
+		() => {
+			setOffset(props["props"]);
+			//console.log("set", props["props"]);
+			return () => {};
+		},
+		[props["props"]]
+	);
 
 	return (
 		<div>
-			<Carousel>
+			<Carousel
+				showArrows={true}
+				showThumbs={false}
+				autoPlay={true}
+				dynamicHeight={true}
+				infiniteLoop={true}
+				stopOnHover={false}
+				swipeable={true}>
 				<div className="bg-white">
 					<img
 						className="img-fluid rounded mx-auto d-block w-100 h-100"
@@ -107,4 +120,9 @@ export const Gallery = options => {
 			</Carousel>
 		</div>
 	);
+};
+
+Gallery.propTypes = {
+	props: PropTypes.any,
+	offset: PropTypes.any
 };
