@@ -11,6 +11,13 @@ import AKG_Tiles2 from "../../img/AKG_tiles2.jpg";
 import Firestone_Hat from "../../img/Firestone/Firestone_Hat.png";
 import Firestone_Hat2 from "../../img/Firestone/Firestone_Hat2.png";
 import Firestone_Logo from "../../img/Firestone/Firestone_Logo.png";
+import GACO_LogoT from "../../img/GACO/GACO_LogoT.png";
+import GACO_Logo2T from "../../img/GACO/GACO_Logo2T.png";
+import GACO_Reroof from "../../img/GACO/GACO_Reroof.jpg";
+import GACO_Flex from "../../img/GACO/GACO_Flex.jpg";
+import GACO_Flex2 from "../../img/GACO/GACO_Flex2.jpg";
+import Tropical_Main from "../../img/Tropical/Tropical_Main.jpg";
+import Tropical_Logo from "../../img/Tropical/Tropical_Logo.png";
 
 export const FeatureS1 = props => {
 	return (
@@ -94,19 +101,140 @@ export const FeatureS1 = props => {
 
 					<div className="col-xs-12 features-item">
 						<div className="row">
-							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
+							<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
 								<div
 									className="inner background-light box3"
 									style={{
 										backgroundImage: "url(" + Firestone_Hat2 + ")",
-										backgroundSize: "cover"
+										backgroundSize: "cover",
+										maxHeight: "30em",
+										margin: "auto"
 									}}>
-									<i className="icon features-icon icons8-clock" />
 									<div
 										style={{
 											backgroundColor: "rgba(255, 255, 255, 0.3)",
 											height: "5em",
+											width: "100%"
+										}}>
+										<div
+											className="flex-grow"
+											style={{
+												backgroundImage: "url(" + Firestone_Logo + ")",
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												height: "100%",
+												width: "100%"
+											}}
+										/>
+									</div>
+
+									<br />
+									<br />
+									<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+										<div className="title" style={{ wordWrap: "break-word" }}>
+											EPDM TPO POLYISO
+										</div>
+									</h5>
+									<br />
+									<br />
+									<p className="description">
+										With superior durability, flexibility and UV resistance, RubberGard™ EPDM is the
+										smart roofing solution for any application.
+									</p>
+								</div>
+							</div>
+
+							<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+								<div
+									className="inner background-light box3"
+									style={{
+										backgroundImage: "url(" + Tropical_Main + ")",
+										backgroundSize: "cover",
+										backgroundPosition: "center",
+										backgroundRepeat: "no-repeat",
+										height: "100%",
+										width: "100%",
+										maxHeight: "30em"
+									}}>
+									<div
+										style={{
+											height: "5em",
 											width: "15em"
+										}}>
+										<div />
+									</div>
+
+									<br />
+									<br />
+									<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+										<div className="title" style={{ wordWrap: "break-word" }}>
+											EPDM TPO POLYISO
+										</div>
+									</h5>
+									<br />
+									<br />
+									<p className="description">
+										With superior durability, flexibility and UV resistance, RubberGard™ EPDM is the
+										smart roofing solution for any application.
+									</p>
+								</div>
+							</div>
+
+							<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+								<div
+									className="inner background-light box3"
+									style={{
+										backgroundImage: "url(" + GACO_Flex + ")",
+										backgroundPosition: "center",
+										backgroundSize: "cover",
+										backgroundRepeat: "no-repeat",
+										maxHeight: "30em"
+									}}>
+									<div
+										style={{
+											backgroundColor: "rgba(255, 255, 255, 0.4)",
+											height: "5em",
+											width: "100%"
+										}}>
+										<div
+											style={{
+												backgroundImage: "url(" + GACO_LogoT + ")",
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												height: "100%",
+												width: "100%"
+											}}
+										/>
+									</div>
+
+									<br />
+									<br />
+									<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+										<div className="title" style={{ wordWrap: "break-word" }}>
+											Roof Foam and Solvent-Free Silicone Systems
+										</div>
+									</h5>
+									<br />
+									<p className="description">
+										With superior durability, flexibility and UV resistance, RubberGard™ EPDM is the
+										smart roofing solution for any application.
+									</p>
+								</div>
+							</div>
+
+							<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+								<div
+									className="inner background-light box3"
+									style={{
+										backgroundImage: "url(" + Firestone_Hat2 + ")",
+										backgroundSize: "cover",
+										maxHeight: "30em"
+									}}>
+									<div
+										style={{
+											backgroundColor: "rgba(255, 255, 255, 0.3)",
+											height: "5em",
+											width: "100%"
 										}}>
 										<div
 											style={{
@@ -134,69 +262,84 @@ export const FeatureS1 = props => {
 									</p>
 								</div>
 							</div>
-
-							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light box3">
-									<i className="icon features-icon icons8-bullish" />
-									<h6 className="title">Dynamic Growth</h6>
-									<div className="detail">
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet.
-										</p>
+							<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+								<div
+									className="inner background-light box3"
+									style={{
+										backgroundImage: "url(" + Firestone_Hat2 + ")",
+										backgroundSize: "cover",
+										maxHeight: "30em"
+									}}>
+									<div
+										style={{
+											backgroundColor: "rgba(255, 255, 255, 0.3)",
+											height: "5em",
+											width: "100%"
+										}}>
+										<div
+											style={{
+												backgroundImage: "url(" + Firestone_Logo + ")",
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												height: "100%",
+												width: "100%"
+											}}
+										/>
 									</div>
+
+									<br />
+									<br />
+									<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+										<div className="title" style={{ wordWrap: "break-word" }}>
+											EPDM TPO POLYISO
+										</div>
+									</h5>
+									<br />
+									<br />
+									<p className="description">
+										With superior durability, flexibility and UV resistance, RubberGard™ EPDM is the
+										smart roofing solution for any application.
+									</p>
 								</div>
 							</div>
-
-							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light box3">
-									<i className="icon features-icon icons8-calendar" />
-									<h6 className="title">Weekly Report</h6>
-									<div className="detail">
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet.
-										</p>
+							<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+								<div
+									className="inner background-light box3"
+									style={{
+										backgroundImage: "url(" + Firestone_Hat2 + ")",
+										backgroundSize: "cover",
+										maxHeight: "30em"
+									}}>
+									<div
+										style={{
+											backgroundColor: "rgba(255, 255, 255, 0.3)",
+											height: "5em",
+											width: "100%"
+										}}>
+										<div
+											style={{
+												backgroundImage: "url(" + Firestone_Logo + ")",
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												height: "100%",
+												width: "100%"
+											}}
+										/>
 									</div>
-								</div>
-							</div>
 
-							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light box3">
-									<i className="icon features-icon icons8-coins" />
-									<h6 className="title">Well Promoted</h6>
-									<div className="detail">
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light box3">
-									<i className="icon features-icon icons8-wine-glass" />
-									<h6 className="title">Most Popular</h6>
-									<div className="detail">
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div className="each-features text-center col-md-4 col-sm-6 col-xs-12">
-								<div className="inner background-light box3">
-									<i className="icon features-icon icons8-privacy" />
-									<h6 className="title">Follows Law</h6>
-									<div className="detail">
-										<p>
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet.
-										</p>
-									</div>
+									<br />
+									<br />
+									<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+										<div className="title" style={{ wordWrap: "break-word" }}>
+											EPDM TPO POLYISO
+										</div>
+									</h5>
+									<br />
+									<br />
+									<p className="description">
+										With superior durability, flexibility and UV resistance, RubberGard™ EPDM is the
+										smart roofing solution for any application.
+									</p>
 								</div>
 							</div>
 						</div>
