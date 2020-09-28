@@ -40,7 +40,7 @@ export const FeatureS1 = props => {
 	return (
 		<section className="features-section-1 relative background-semi-dark" id="features">
 			<div className="container mt-40">
-				<h3 className="text-center">Hover Effect Style : Demo - 3</h3>
+				<h3 className="text-center my-5">Accomplishments</h3>
 				<div className="row mt-30">
 					<div className="col-md-4 col-sm-6">
 						<div className="box3">
@@ -113,7 +113,7 @@ export const FeatureS1 = props => {
 					style={{
 						backgroundImage: "url(" + AKG_Slats + ")",
 						backgroundColor: "black",
-						backgroundPosition: "0px " + offset * 0.5 + "px",
+						backgroundPosition: "0px " + offset * 0.2 + "px",
 						backgroundRepeat: "repeat",
 						backgroundSize: "contain"
 					}}>
@@ -247,127 +247,6 @@ export const FeatureS1 = props => {
 												Roof Foam and Solvent-Free Silicone Systems
 											</div>
 										</h5>
-										<br />
-										<p className="description">
-											With superior durability, flexibility and UV resistance, RubberGard™ EPDM is
-											the smart roofing solution for any application.
-										</p>
-									</div>
-								</div>
-
-								<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
-									<div
-										className="inner background-light box3"
-										style={{
-											backgroundImage: "url(" + Firestone_Hat2 + ")",
-											backgroundSize: "cover",
-											maxHeight: "30em"
-										}}>
-										<div
-											style={{
-												backgroundColor: "rgba(255, 255, 255, 0.3)",
-												height: "5em",
-												width: "100%"
-											}}>
-											<div
-												style={{
-													backgroundImage: "url(" + Firestone_Logo + ")",
-													backgroundSize: "contain",
-													backgroundRepeat: "no-repeat",
-													height: "100%",
-													width: "100%"
-												}}
-											/>
-										</div>
-
-										<br />
-										<br />
-										<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-											<div className="title" style={{ wordWrap: "break-word" }}>
-												EPDM TPO POLYISO
-											</div>
-										</h5>
-										<br />
-										<br />
-										<p className="description">
-											With superior durability, flexibility and UV resistance, RubberGard™ EPDM is
-											the smart roofing solution for any application.
-										</p>
-									</div>
-								</div>
-								<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
-									<div
-										className="inner background-light box3"
-										style={{
-											backgroundImage: "url(" + Firestone_Hat2 + ")",
-											backgroundSize: "cover",
-											maxHeight: "30em"
-										}}>
-										<div
-											style={{
-												backgroundColor: "rgba(255, 255, 255, 0.3)",
-												height: "5em",
-												width: "100%"
-											}}>
-											<div
-												style={{
-													backgroundImage: "url(" + Firestone_Logo + ")",
-													backgroundSize: "contain",
-													backgroundRepeat: "no-repeat",
-													height: "100%",
-													width: "100%"
-												}}
-											/>
-										</div>
-
-										<br />
-										<br />
-										<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-											<div className="title" style={{ wordWrap: "break-word" }}>
-												EPDM TPO POLYISO
-											</div>
-										</h5>
-										<br />
-										<br />
-										<p className="description">
-											With superior durability, flexibility and UV resistance, RubberGard™ EPDM is
-											the smart roofing solution for any application.
-										</p>
-									</div>
-								</div>
-								<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
-									<div
-										className="inner background-light box3"
-										style={{
-											backgroundImage: "url(" + Firestone_Hat2 + ")",
-											backgroundSize: "cover",
-											maxHeight: "30em"
-										}}>
-										<div
-											style={{
-												backgroundColor: "rgba(255, 255, 255, 0.3)",
-												height: "5em",
-												width: "100%"
-											}}>
-											<div
-												style={{
-													backgroundImage: "url(" + Firestone_Logo + ")",
-													backgroundSize: "contain",
-													backgroundRepeat: "no-repeat",
-													height: "100%",
-													width: "100%"
-												}}
-											/>
-										</div>
-
-										<br />
-										<br />
-										<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-											<div className="title" style={{ wordWrap: "break-word" }}>
-												EPDM TPO POLYISO
-											</div>
-										</h5>
-										<br />
 										<br />
 										<p className="description">
 											With superior durability, flexibility and UV resistance, RubberGard™ EPDM is

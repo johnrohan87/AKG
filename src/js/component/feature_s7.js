@@ -13,7 +13,7 @@ export const FeatureS7 = () => {
 				style={{ backgroundImage: "url(" + Homes + ")" }}
 			/>
 
-			<div className="container">
+			<div className="container" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 				<div className="row section-separator text-left">
 					<div className="col-md-6">
 						<div className="inner">

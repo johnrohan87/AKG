@@ -8,7 +8,7 @@ import { useEffect } from "react";
 export const HeaderSection = () => {
 	return (
 		<section className="header-section-1 bg-image-1 header-js" id="header">
-			<div className="overlay-color">
+			<div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 				<div className="container">
 					<div className="row section-separator">
 						<div className="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">

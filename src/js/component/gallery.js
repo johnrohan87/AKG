@@ -33,7 +33,8 @@ export const Gallery = props => {
 				dynamicHeight={true}
 				infiniteLoop={true}
 				stopOnHover={false}
-				swipeable={true}>
+				swipeable={true}
+				className="h-100">
 				<div className="bg-white">
 					<img
 						className="img-fluid rounded mx-auto d-block w-100 h-100"
@@ -41,7 +42,7 @@ export const Gallery = props => {
 						alt="First slide"
 						style={{
 							maxHeight: "700px",
-							transform: `translateY(${offset * 0.5}px)`
+							transform: `translateY(${offset * 0.2}px)`
 						}}
 					/>
 					<h3

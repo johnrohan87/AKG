@@ -82,65 +82,6 @@ export const FeatureS8 = () => {
 								</div>
 							</div>
 						</div>
-
-						<div className="each-project row">
-							<div className="each-project-inner">
-								<div className="vertical-middle col-md-7 col-sm-6 col-xs-12">
-									<div
-										className="project-image cover"
-										style={{ backgroundImage: "url(" + Proj3 + ")" }}
-									/>
-								</div>
-								<div className="vertical-middle col-md-5 col-sm-6 col-xs-12">
-									<div className="inner p-l-50">
-										<h2 className="section-heading">iOS Interface for ZEIS Inc.</h2>
-
-										<div className="detail">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh
-												euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-											</p>
-										</div>
-
-										<div className="btn-form">
-											<a href="#" className="btn btn-fill right-icon">
-												View Case Study <i className="icon icons8-advance" />
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="each-project row">
-							<div className="each-project-inner">
-								<div className="vertical-middle col-md-5 col-sm-6 col-xs-12">
-									<div className="inner p-r-50">
-										<h2 className="section-heading">iOS Interface for ZEIS Inc.</h2>
-
-										<div className="detail">
-											<p>
-												Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh
-												euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-											</p>
-										</div>
-
-										<div className="btn-form">
-											<a href="#" className="btn btn-fill right-icon">
-												View Case Study <i className="icon icons8-advance" />
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div className="vertical-middle col-md-7 col-sm-6 col-xs-12">
-									<div
-										className="project-image cover"
-										style={{ backgroundImage: "url(" + Proj4 + ")" }}
-									/>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
