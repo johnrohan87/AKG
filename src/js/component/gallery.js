@@ -42,7 +42,8 @@ export const Gallery = props => {
 						alt="First slide"
 						style={{
 							maxHeight: "700px",
-							transform: `translateY(${offset * 0.2}px)`
+							transform: `translateY(${offset * 0.5}px)`,
+							transition: "transform 250ms ease-in"
 						}}
 					/>
 					<h3

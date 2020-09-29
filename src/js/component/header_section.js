@@ -1,4 +1,5 @@
 import React from "react";
+import { Form, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
@@ -10,9 +11,9 @@ export const HeaderSection = () => {
 		<section className="header-section-1 bg-image-1 header-js" id="header">
 			<div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 				<div className="container">
-					<div className="row section-separator">
-						<div className="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-							<div className="part-inner text-center">
+					<div className="d-flex row section-separator">
+						<div className="col-xl-8 col-lg-8 col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-1">
+							<div className="part-inner text-center border border-primary">
 								<h1 className="title">AKG Roofing and Specialty Services, INC. </h1>
 
 								<div className="detail">
@@ -27,6 +28,46 @@ export const HeaderSection = () => {
 									</a>
 								</div>
 							</div>
+							<hr />
+						</div>
+						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
+							<Form.Group className="p-0">
+								<div className="container-fluid p-0">
+									<div className="bg-success p-3 border border-light">Hello</div>
+								</div>
+								<div className="p-3">
+									<Form.Row>
+										<Form.Label column="lg" lg={2}>
+											Large Text
+										</Form.Label>
+										<Col>
+											<Form.Control size="lg" type="text" placeholder="Large text" />
+										</Col>
+									</Form.Row>
+									<br />
+									<Form.Row>
+										<Form.Label column lg={2}>
+											Normal Text
+										</Form.Label>
+										<Col>
+											<Form.Control type="text" placeholder="Normal text" />
+										</Col>
+									</Form.Row>
+									<br />
+									<Form.Row>
+										<Form.Label column="sm" lg={2}>
+											Small Text
+										</Form.Label>
+										<Col>
+											<Form.Control size="sm" type="text" placeholder="Small text" />
+										</Col>
+									</Form.Row>
+									<br />
+									<Button variant="primary" type="submit">
+										Submit
+									</Button>
+								</div>
+							</Form.Group>
 						</div>
 					</div>
 				</div>

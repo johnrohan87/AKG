@@ -114,6 +114,7 @@ export const FeatureS1 = props => {
 						backgroundImage: "url(" + AKG_Slats + ")",
 						backgroundColor: "black",
 						backgroundPosition: "0px " + offset * 0.2 + "px",
+						transition: "transform 250ms ease-in",
 						backgroundRepeat: "repeat",
 						backgroundSize: "contain"
 					}}>
