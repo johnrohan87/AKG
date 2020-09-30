@@ -1,4 +1,17 @@
 
+@font-face {
+  font-family: 'ChristopherHand';
+  src: local('ChristopherHand'), url(../Font/comesinhandy.ttf) format('truetype');
+}
+
+div > .centeredLABEL{
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 80%;
+}
+
 div > .centeredIMGh3{
     color: #686868;
     position: absolute;
@@ -181,7 +194,7 @@ div > .centeredIMGp{
  * ===============================
  */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Iowan Old Style";
   color: rgba(88, 88, 88, 0.8);
   font-size: 16px;
   font-style: none;
@@ -195,7 +208,7 @@ a {
   text-decoration: none !important;
   display: inline-block;
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: "Iowan Old Style";
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -244,7 +257,7 @@ a:focus {
   left: 0;
 }
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Iowan Old Style";
   color: rgba(88, 88, 88, 0.8);
   font-size: 16px;
   line-height: 25px;
@@ -261,7 +274,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   color: #585858;
 }
 h1 {
@@ -1219,7 +1232,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 .pricing-table .each-table .inner .meta-price {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', "Iowan Old Style";
   font-size: 70px;
   font-weight: 200;
   line-height: 70px;

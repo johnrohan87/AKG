@@ -46,21 +46,23 @@ export const Gallery = props => {
 							transition: "transform 250ms ease-in"
 						}}
 					/>
-					<h3
-						className="centeredIMGh3"
-						style={{
-							transform: `translateY(${offset * 0.5}px)`
-						}}>
-						First slide label
-					</h3>
-					<div>
-						<p
-							className="centeredIMGp"
+					<div className="">
+						<h3
+							className="centeredIMGh3 text-dark"
 							style={{
-								transform: `translateY(${offset * 0.5}px)`
+								fontFamily: "Iowan Old Style"
 							}}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</p>
+							First slide label
+						</h3>
+						<div>
+							<p
+								className="centeredIMGp text-dark"
+								style={{
+									fontFamily: "Iowan Old Style"
+								}}>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+						</div>
 					</div>
 				</div>
 				<div className="bg-white">
@@ -70,22 +72,21 @@ export const Gallery = props => {
 						alt="Third slide"
 						style={{
 							maxHeight: "700px",
-
 							transform: `translateY(${offset * 0.5}px)`
 						}}
 					/>
 					<div>
 						<h3
-							className="centeredIMGh3"
+							className="centeredIMGh3 text-dark"
 							style={{
-								transform: `translateY(${offset * 0.5}px)`
+								fontFamily: "Iowan Old Style"
 							}}>
 							Second slide label
 						</h3>
 						<p
-							className="centeredIMGp"
+							className="centeredIMGp text-dark"
 							style={{
-								transform: `translateY(${offset * 0.5}px)`
+								fontFamily: "Iowan Old Style"
 							}}>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</p>
@@ -104,16 +105,16 @@ export const Gallery = props => {
 					/>
 					<div>
 						<h3
-							className="centeredIMGh3"
+							className="centeredIMGh3 text-dark"
 							style={{
-								transform: `translateY(${offset * 0.5}px)`
+								fontFamily: "Iowan Old Style"
 							}}>
 							Third slide label
 						</h3>
 						<p
-							className="centeredIMGp"
+							className="centeredIMGp text-dark"
 							style={{
-								transform: `translateY(${offset * 0.5}px)`
+								fontFamily: "Iowan Old Style"
 							}}>
 							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
 						</p>

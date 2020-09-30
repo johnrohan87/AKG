@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import * as $ from "jquery";
 
 //include your index.scss file into the bundle
+import "../Font/comesinhandy.ttf";
 import "../styles/index.scss";
 
 //import your own components
