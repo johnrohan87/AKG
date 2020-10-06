@@ -38,7 +38,7 @@ export const FeatureS1 = props => {
 	);
 
 	return (
-		<section className="features-section-1 relative background-semi-dark" id="features">
+		<section className="features-section-1 relative" id="features">
 			<div className="container mt-40">
 				<h3 className="text-center my-5">Accomplishments</h3>
 				<div className="row mt-30">

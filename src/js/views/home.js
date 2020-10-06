@@ -33,6 +33,7 @@ export const Home = () => {
 
 			navHeight = actions.returnComponentHeight("NAVBAR");
 			//console.log("navHeight = " + navHeight);
+
 			return () => {
 				window.removeEventListener("scroll", handleScroll);
 			};
@@ -41,9 +42,18 @@ export const Home = () => {
 	);
 
 	return (
-		<div className="text-center">
-			<Gallery props={offset} />
-			<HeaderSection />
+		<div
+			className="text-center"
+			style={{
+				background: "linear-gradient(180deg, rgba(138,103,173,1) 0%, rgba(240,146,161,1) 73%)",
+				backgroundAttachment: "fixed"
+			}}>
+			<div className="container-fluid p-0">
+				<Gallery props={offset} />
+			</div>
+			<div className="container-fluid">
+				<HeaderSection />
+			</div>
 			<FeatureS7 />
 			<FeatureS1 props={offset} />
 			<FeatureS2 />

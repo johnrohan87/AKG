@@ -12,116 +12,83 @@ import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
 
 export const Gallery = props => {
-	const [offset, setOffset] = useState(0);
+	const [offset, setOffset] = useState(props["props"]);
 	const { store, actions } = useContext(Context);
 
 	useEffect(
 		() => {
-			setOffset(props["props"]);
 			//console.log("set", props["props"]);
+			setOffset(props["props"]);
 			return () => {};
 		},
-		[props["props"]]
+		[props]
 	);
 
 	return (
-		<div>
-			<Carousel
-				showArrows={true}
-				showThumbs={false}
-				autoPlay={true}
-				dynamicHeight={true}
-				infiniteLoop={true}
-				stopOnHover={false}
-				swipeable={true}
-				className="h-100">
-				<div className="bg-white">
-					<img
-						className="img-fluid rounded mx-auto d-block w-100 h-100"
-						src={AKG_Home}
-						alt="First slide"
-						style={{
-							maxHeight: "700px",
-							transform: `translateY(${offset * 0.5}px)`,
-							transition: "transform 250ms ease-in"
-						}}
-					/>
-					<div className="">
-						<h3
-							className="centeredIMGh3 text-dark"
-							style={{
-								fontFamily: "Iowan Old Style"
-							}}>
-							First slide label
-						</h3>
-						<div>
-							<p
-								className="centeredIMGp text-dark"
-								style={{
-									fontFamily: "Iowan Old Style"
-								}}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div className="bg-white">
-					<img
-						className="img-fluid rounded mx-auto d-block w-100"
-						src={AKG_Home2}
-						alt="Third slide"
-						style={{
-							maxHeight: "700px",
-							transform: `translateY(${offset * 0.5}px)`
-						}}
-					/>
-					<div>
-						<h3
-							className="centeredIMGh3 text-dark"
-							style={{
-								fontFamily: "Iowan Old Style"
-							}}>
-							Second slide label
-						</h3>
-						<p
-							className="centeredIMGp text-dark"
-							style={{
-								fontFamily: "Iowan Old Style"
-							}}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</p>
-					</div>
-				</div>
-				<div className="bg-white">
-					<img
-						className="img-fluid rounded mx-auto d-block w-100"
-						src={AKG_Home3}
-						alt="Third slide"
-						style={{
-							maxHeight: "700px",
-
-							transform: `translateY(${offset * 0.5}px)`
-						}}
-					/>
-					<div>
-						<h3
-							className="centeredIMGh3 text-dark"
-							style={{
-								fontFamily: "Iowan Old Style"
-							}}>
-							Third slide label
-						</h3>
-						<p
-							className="centeredIMGp text-dark"
-							style={{
-								fontFamily: "Iowan Old Style"
-							}}>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						</p>
-					</div>
-				</div>
-			</Carousel>
-		</div>
+		<Carousel
+			showArrows={true}
+			showThumbs={false}
+			autoPlay={true}
+			dynamicHeight={true}
+			infiniteLoop={true}
+			stopOnHover={false}
+			swipeable={true}>
+			<div className="h-100">
+				<img
+					className="img-fluid rounded mx-auto d-block w-100 h-100"
+					src={AKG_Home}
+					alt="First slide"
+					style={{
+						maxHeight: "700px",
+						minHeight: "300px",
+						transform: `translateY(${offset * 0.5}px)`
+					}}
+				/>
+				<p className="infoBanner" style={{ lineHeight: "150%" }}>
+					<i className="fas fa-home" /> Residential <br />
+					<i className="far fa-building" /> Commercial <br />
+					Customized Solutions for Your Needs!
+				</p>
+			</div>
+			<div className="h-100">
+				<img
+					className="img-fluid rounded mx-auto d-block w-100"
+					src={AKG_Home2}
+					alt="Third slide"
+					style={{
+						maxHeight: "700px",
+						minHeight: "300px",
+						transform: `translateY(${offset * 0.5}px)`
+					}}
+				/>
+				<p className="infoBanner" style={{ lineHeight: "150%" }}>
+					<i className="fas fa-home" /> Residential
+					<br />
+					<i className="far fa-building" /> Commercial
+					<br />
+					Customized Solutions for Your Needs!
+				</p>
+			</div>
+			<div className="h-100">
+				<img
+					className="img-fluid rounded mx-auto d-block w-100"
+					src={AKG_Home3}
+					alt="Third slide"
+					style={{
+						maxHeight: "700px",
+						minHeight: "300px",
+						transform: `translateY(${offset * 0.5}px)`
+					}}
+				/>
+				<p className="infoBanner" style={{ lineHeight: "150%" }}>
+					<i className="fas fa-home" /> Residential
+					<br />
+					<i className="far fa-building" /> Commercial
+					<br />
+					Customized Solutions for Your Needs!
+				</p>
+			</div>
+		</Carousel>
 	);
 };
 

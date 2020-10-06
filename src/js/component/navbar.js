@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../img/logo.png";
+import Logo from "../../img/AKG_Logo.png";
 import LogoDark from "../../img/logo-dark.png";
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
 import { Context } from "../store/appContext";
@@ -32,7 +32,9 @@ export const NavbarMain = () => {
 
 	return (
 		<Navbar collapseOnSelect expand="lg" bg="light" variant="light" ref={ref}>
-			<Navbar.Brand href="#home">AKG Roofing and Specialty Services - {height}</Navbar.Brand>
+			<Navbar.Brand href="#home" className="p-0">
+				<img src={Logo} className="img-fluid rounded mx-auto" style={{ height: "5rem" }} />
+			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="mr-auto">

@@ -6,16 +6,16 @@ import Homes from "../../img/AKG_homes.jpg";
 
 export const FeatureS7 = () => {
 	return (
-		<section className="features-section-7 content-half background-light">
-			<div className="container-half container-half-left background-light" />
+		<section className="features-section-7 content-half">
+			<div className="container-half container-half-left" />
 			<div
 				className="container-half container-half-right cover"
 				style={{ backgroundImage: "url(" + Homes + ")" }}
 			/>
 
-			<div className="container" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+			<div className="container" style={{ backgroundColor: "rgb(65, 196, 221,0.5)" }}>
 				<div className="row section-separator text-left">
-					<div className="col-md-6">
+					<div className="col-md-12 col-lg-6">
 						<div className="inner">
 							<h2 className="section-heading">AKG Roofing and Specialty Services, INC.</h2>
 							<div className="detail">
@@ -25,7 +25,7 @@ export const FeatureS7 = () => {
 								</p>
 
 								<p>
-									With over 43 years of experience Joe stands by Honesty, Integrity, and Dignity
+									With over 43 years of experience AKG stands by Honesty, Integrity, and Dignity
 									“Roofing is what we do” is our moto.
 								</p>
 							</div>

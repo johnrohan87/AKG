@@ -25,6 +25,49 @@ div > .centeredIMGp{
     left: 15%;
 }
 
+.carousel {
+    position: relative;
+    width: 100%;
+
+    .slide {
+        min-width: 100%;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        background: #000;
+        // padding-bottom: 32px;
+
+        .infoBanner {
+            //border: 3px solid #73AD21;
+            transition: (all, 0.5s, ease-in-out);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -45%;
+            width: 90%;
+            border-radius: 10px;
+            background: #000;
+            color: #fff;
+            //padding: 1rem;
+            font-size: 5vw;
+            text-align: center;
+            opacity: 0.55;
+            //height: auto;
+            min-height: 20%;
+            //transition: (opacity, 0.35s, ease-in-out);
+        }
+    }
+    &:hover {
+        .slide .infoBanner {
+            opacity: .8;
+            transition: opacity .5s ease-in-out;
+            -moz-transition: opacity .5s ease-in-out;
+            -webkit-transition: opacity .5s ease-in-out;
+        }
+    }
+}
+
+
 
 /*********************** Demo - 3 *******************/
 .box3{box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
