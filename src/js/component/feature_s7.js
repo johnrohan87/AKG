@@ -14,7 +14,7 @@ export const FeatureS7 = () => {
 			/>
 
 			<div className="container" style={{ backgroundColor: "rgb(65, 196, 221,0.5)" }}>
-				<div className="row section-separator text-left">
+				<div className="row section-separator text-left animate__animated animate__bounce">
 					<div className="col-md-12 col-lg-6">
 						<div className="inner">
 							<h2 className="section-heading">AKG Roofing and Specialty Services, INC.</h2>
