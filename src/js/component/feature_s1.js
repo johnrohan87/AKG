@@ -24,6 +24,8 @@ import PropTypes from "prop-types";
 import { useEffect, useState, useContext } from "react";
 import { Context } from "../store/appContext";
 
+import VisibilitySensor from "react-visibility-sensor";
+
 export const FeatureS1 = props => {
 	const [offset, setOffset] = useState(0);
 	const { store, actions } = useContext(Context);
@@ -36,6 +38,10 @@ export const FeatureS1 = props => {
 		},
 		[props["props"]]
 	);
+
+	function VisibilityCheck(isVisible) {
+		console.log("Element is now %s", isVisible ? "visible" : "hidden");
+	}
 
 	return (
 		<section className="features-section-1 relative" id="features">
@@ -135,48 +141,54 @@ export const FeatureS1 = props => {
 
 						<div className="col-xs-12 features-item">
 							<div className="row">
-								<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
-									<div
-										className="inner background-light box3"
-										style={{
-											backgroundImage: "url(" + Firestone_Hat2 + ")",
-											backgroundSize: "cover",
-											maxHeight: "30em",
-											margin: "auto"
-										}}>
+								{
+									// Box 1 Firestone
+								}
+								<VisibilitySensor onChange={VisibilityCheck}>
+									<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
 										<div
+											className="inner background-light box3"
 											style={{
-												backgroundColor: "rgba(255, 255, 255, 0.3)",
-												height: "5em",
-												width: "100%"
+												backgroundImage: "url(" + Firestone_Hat2 + ")",
+												backgroundSize: "cover",
+												maxHeight: "30em",
+												margin: "auto"
 											}}>
 											<div
-												className="flex-grow"
 												style={{
-													backgroundImage: "url(" + Firestone_Logo + ")",
-													backgroundSize: "contain",
-													backgroundRepeat: "no-repeat",
-													height: "100%",
+													backgroundColor: "rgba(255, 255, 255, 0.3)",
+													height: "5em",
 													width: "100%"
-												}}
-											/>
-										</div>
-
-										<br />
-										<br />
-										<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-											<div className="title" style={{ wordWrap: "break-word" }}>
-												EPDM TPO POLYISO
+												}}>
+												<div
+													className="flex-grow"
+													style={{
+														backgroundImage: "url(" + Firestone_Logo + ")",
+														backgroundSize: "contain",
+														backgroundRepeat: "no-repeat",
+														height: "100%",
+														width: "100%"
+													}}
+												/>
 											</div>
-										</h5>
-										<br />
-										<br />
-										<p className="description">
-											With superior durability, flexibility and UV resistance, RubberGard™ EPDM is
-											the smart roofing solution for any application.
-										</p>
+
+											<br />
+											<br />
+											<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+												<div className="title" style={{ wordWrap: "break-word" }}>
+													EPDM TPO POLYISO
+												</div>
+											</h5>
+											<br />
+											<br />
+											<p className="description">
+												With superior durability, flexibility and UV resistance, RubberGard™
+												EPDM is the smart roofing solution for any application.
+											</p>
+											{({ isVisible }) => <div>I am {isVisible ? "visible" : "invisible"}</div>}
+										</div>
 									</div>
-								</div>
+								</VisibilitySensor>
 
 								<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
 									<div

@@ -20,13 +20,22 @@ export const FeatureS7 = () => {
 							<h2 className="section-heading">AKG Roofing and Specialty Services, INC.</h2>
 							<div className="detail">
 								<p>
-									AKG was founded in 1977, licensed in Dade and Broward county in 1981, and then state
-									wide by 1989.
+									Joe Hernandez, has been a licensing contractor since 1977, licensed in Dade and
+									Broward county in 1981, and then state wide by 1987. Also became a home inspector in
+									2007.
 								</p>
 
 								<p>
 									With over 43 years of experience AKG stands by Honesty, Integrity, and Dignity
 									“Roofing is what we do” is our moto.
+								</p>
+								<p>
+									Joe Hernandez has been highley respected throughout the entire state of florida for
+									his knloedge and roofing evaluatins, by his piers and as a consultant.
+								</p>
+								<p>
+									Each and every project is personaly supervised by Joe and is alwayse available on
+									his cell phone once you have engaged with AKG as your personilazed vendor.
 								</p>
 							</div>
 						</div>
