@@ -25,22 +25,30 @@ import { useEffect, useState, useContext } from "react";
 import { Context } from "../store/appContext";
 
 import VisibilitySensor from "react-visibility-sensor";
+import "react-animation/dist/keyframes.css";
+import { AnimateOnChange, HideUntilLoaded, animations } from "react-animation";
 
 export const FeatureS1 = props => {
 	const [offset, setOffset] = useState(0);
+	const [action, setAction] = useState("");
 	const { store, actions } = useContext(Context);
+	const refFirestone = React.useRef();
 
 	useEffect(
 		() => {
 			setOffset(props["props"]);
 			//console.log("set", props["props"]);
+
 			return () => {};
 		},
 		[props["props"]]
 	);
 
-	function VisibilityCheck(isVisible) {
-		console.log("Element is now %s", isVisible ? "visible" : "hidden");
+	function onChange(isVisible) {
+		console.log("action changed to -", action);
+		action ? setAction("animations.fadeInUp") : setAction("animations.fadeInUp");
+
+		refFirestone.current.style.animation = "animations.fadeInUp";
 	}
 
 	return (
@@ -144,15 +152,18 @@ export const FeatureS1 = props => {
 								{
 									// Box 1 Firestone
 								}
-								<VisibilitySensor onChange={VisibilityCheck}>
-									<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+
+								<div className="d-inline each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
+									<VisibilitySensor onChange={onChange} className="">
 										<div
+											ref={refFirestone}
 											className="inner background-light box3"
 											style={{
 												backgroundImage: "url(" + Firestone_Hat2 + ")",
 												backgroundSize: "cover",
 												maxHeight: "30em",
-												margin: "auto"
+												margin: "auto",
+												animation: "animations.popIn"
 											}}>
 											<div
 												style={{
@@ -175,20 +186,22 @@ export const FeatureS1 = props => {
 											<br />
 											<br />
 											<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-												<div className="title" style={{ wordWrap: "break-word" }}>
+												<div className={"title"} style={{ wordWrap: "break-word" }}>
 													EPDM TPO POLYISO
 												</div>
 											</h5>
 											<br />
 											<br />
-											<p className="description">
+
+											<p className={"description"}>
 												With superior durability, flexibility and UV resistance, RubberGard™
 												EPDM is the smart roofing solution for any application.
 											</p>
+
 											{({ isVisible }) => <div>I am {isVisible ? "visible" : "invisible"}</div>}
 										</div>
-									</div>
-								</VisibilitySensor>
+									</VisibilitySensor>
+								</div>
 
 								<div className="each-features text-center col-lg-4 col-md-6 col-sm-12 col-xs-12 py-5">
 									<div
