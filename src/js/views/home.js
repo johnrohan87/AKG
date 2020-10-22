@@ -41,6 +41,9 @@ export const Home = () => {
 		[offset]
 	);
 
+	//<FeatureS2 />
+	//<FeatureS8 />
+
 	return (
 		<div
 			className="text-center"
@@ -56,8 +59,6 @@ export const Home = () => {
 			</div>
 			<FeatureS7 />
 			<FeatureS1 props={offset} />
-			<FeatureS2 />
-			<FeatureS8 />
 		</div>
 	);
 };

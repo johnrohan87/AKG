@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoMotto from "../../img/AKG_Logo_Motto.png";
 import LogoDark from "../../img/logo-dark.png";
+import FreeQuote from "../../img/free-quote.jpg";
 
 import { useEffect } from "react";
 
@@ -35,7 +36,9 @@ export const HeaderSection = () => {
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
 							<Form.Group className="p-0">
 								<div className="container-fluid p-0">
-									<div className="bg-success p-3 border border-light">Request a Quote Now!</div>
+									<div className="bg-primary p-3 border border-light">
+										<img src={FreeQuote} />
+									</div>
 								</div>
 								<div className="p-3">
 									<Form.Row>
