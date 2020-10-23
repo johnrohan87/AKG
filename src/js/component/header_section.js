@@ -42,7 +42,7 @@ export const HeaderSection = () => {
 								</div>
 								<div className="p-3">
 									<Form.Row>
-										<Form.Label column="lg" lg={2}>
+										<Form.Label column="lg" lg={4}>
 											Your Name
 										</Form.Label>
 										<Col>
@@ -51,20 +51,20 @@ export const HeaderSection = () => {
 									</Form.Row>
 									<br />
 									<Form.Row>
-										<Form.Label column="lg" lg={2}>
+										<Form.Label column="lg" lg={4}>
 											Address, City/Town, Zip
 										</Form.Label>
 										<Col>
-											<Form.Control size="lg" type="text" placeholder="" />
+											<Form.Control size="lg" type="text" as="textarea" placeholder="" rows={2} />
 										</Col>
 									</Form.Row>
 									<br />
 									<Form.Row>
-										<Form.Label column="lg" lg={2}>
+										<Form.Label column="lg" lg={4}>
 											Message
 										</Form.Label>
 										<Col>
-											<Form.Control size="lg" type="text" placeholder="" />
+											<Form.Control size="lg" type="text" as="textarea" placeholder="" rows={3} />
 										</Col>
 									</Form.Row>
 									<br />

@@ -62,11 +62,8 @@ export const Gallery = props => {
 					}}
 				/>
 				<p className="infoBanner" style={{ lineHeight: "150%" }}>
-					<i className="fas fa-home" /> Residential
-					<br />
-					<i className="far fa-building" /> Commercial
-					<br />
-					Customized Solutions for Your Needs!
+					<i className="fas fa-home" /> Residential <br />
+					Roof Repairs and Replacement
 				</p>
 			</div>
 			<div className="h-100">
@@ -81,11 +78,8 @@ export const Gallery = props => {
 					}}
 				/>
 				<p className="infoBanner" style={{ lineHeight: "150%" }}>
-					<i className="fas fa-home" /> Residential
-					<br />
-					<i className="far fa-building" /> Commercial
-					<br />
-					Customized Solutions for Your Needs!
+					<i className="far fa-building" /> Commercial <br />
+					Faom and Solvent-Free Silicone Systems
 				</p>
 			</div>
 		</Carousel>
