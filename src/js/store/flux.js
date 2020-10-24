@@ -110,7 +110,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 							var currentComponent = tmpStore[item];
 
 							tmpStore[item]["OFFSET"] = offset;
-							console.log(offset);
+							//console.log(offset);
 
 							setStore(tmpStore);
 						}

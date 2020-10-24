@@ -28,6 +28,9 @@ import VisibilitySensor from "react-visibility-sensor";
 import "react-animation/dist/keyframes.css";
 import { AnimateOnChange, HideUntilLoaded, animations } from "react-animation";
 
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
+
 export const FeatureS1 = props => {
 	const [offset, setOffset] = useState(0);
 	const [action, setAction] = useState("");
@@ -45,7 +48,7 @@ export const FeatureS1 = props => {
 	);
 
 	function onChange(isVisible) {
-		console.log("action changed to -", action);
+		//console.log("action changed to -", action);
 		action ? setAction("animations.fadeInUp") : setAction("animations.fadeInUp");
 
 		refFirestone.current.style.animation = "animations.fadeInUp";
