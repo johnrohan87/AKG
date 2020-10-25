@@ -18,11 +18,14 @@ import AKG_Homes from "../../img/AKG_homes.jpg";
 import { useEffect, useState, useContext } from "react";
 import { Context } from "../store/appContext";
 
+import "animate.css/animate.css";
+
 var navHeight = 0;
 
 export const Home = () => {
 	const [offset, setOffset] = useState(0);
 	const { store, actions } = useContext(Context);
+	const [entered, setEntered] = useState(false);
 
 	useEffect(
 		() => {
@@ -60,7 +63,16 @@ export const Home = () => {
 			</div>
 			<FeatureS7 />
 			<FeatureS1 props={offset} />
-			<SlideUpBox />
+			<div className="bg-primary">
+				<SlideUpBox in={entered} />
+				<button
+					onClick={() => {
+						setEntered(!entered);
+					}}
+					style={{ marginTop: "10rem" }}>
+					Toggle Entered
+				</button>
+			</div>
 		</div>
 	);
 };
