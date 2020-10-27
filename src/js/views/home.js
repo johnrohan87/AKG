@@ -47,23 +47,8 @@ export const Home = () => {
 
 	//<FeatureS2 />
 	//<FeatureS8 />
-
-	return (
-		<div
-			className="text-center"
-			style={{
-				background: "linear-gradient(180deg, rgba(138,103,173,1) 0%, rgba(240,146,161,1) 73%)",
-				backgroundAttachment: "fixed"
-			}}>
-			<div className="container-fluid p-0">
-				<Gallery props={offset} />
-			</div>
-			<div className="container-fluid">
-				<HeaderSection />
-			</div>
-			<FeatureS7 />
-			<FeatureS1 props={offset} />
-			<div className="bg-primary">
+	/*
+<div className="bg-primary">
 				<SlideUpBox in={entered} />
 				<button
 					onClick={() => {
@@ -73,6 +58,23 @@ export const Home = () => {
 					Toggle Entered
 				</button>
 			</div>
+    */
+
+	return (
+		<div
+			className="text-center"
+			style={{
+				background: "linear-gradient(180deg, rgba(138,103,173,1) 0%, rgba(240,146,161,1) 73%)",
+				backgroundAttachment: "fixed"
+			}}>
+			<div className="container-fluid p-0">
+				<Gallery props={0} />
+			</div>
+			<div className="container-fluid">
+				<HeaderSection />
+			</div>
+			<FeatureS7 />
+			<FeatureS1 props={offset} />
 		</div>
 	);
 };

@@ -22,10 +22,10 @@ export const HeaderSection = () => {
 		<section className="header-section-1 bg-image-1 header-js p-3" id="header">
 			<div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 				<div className="container">
-					<div className="d-flex row section-separator">
+					<div className="d-flex row section-separator-line">
 						<div className="col-xl-8 col-lg-8 col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-1">
 							<div className="part-inner text-center">
-								<h1 className="" style={{ color: "black" }}>
+								<h1 className="p-3" style={{ color: "black" }}>
 									<div className="container-fluid">
 										<img src={LogoMotto} className="img-fluid rounded mx-auto" />
 									</div>

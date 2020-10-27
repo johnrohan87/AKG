@@ -32,7 +32,8 @@ export const Gallery = props => {
 			dynamicHeight={true}
 			infiniteLoop={true}
 			stopOnHover={false}
-			swipeable={true}>
+			swipeable={true}
+			interval="4500">
 			<div className="h-100">
 				<img
 					className="img-fluid rounded mx-auto d-block w-100 h-100"
@@ -61,9 +62,12 @@ export const Gallery = props => {
 						transform: `translateY(${offset * 0.5}px)`
 					}}
 				/>
-				<p className="infoBanner" style={{ lineHeight: "150%" }}>
-					<i className="fas fa-home" /> Residential <br />
-					Roof Repairs and Replacement
+				<p className="infoBanner2" style={{ lineHeight: "150%" }}>
+					AKG Installs, Manitaines and Repairs <br />
+					Dimensional and 3 tab Shingle <br />
+					Barrel and Flat Tile <br />
+					Silicone Sealed Flat <br />
+					Metal <br />
 				</p>
 			</div>
 			<div className="h-100">
