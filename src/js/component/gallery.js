@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.css";
 import { Carousel } from "react-responsive-carousel";
 
 import { useEffect, useState, useContext } from "react";
@@ -36,6 +36,23 @@ export const Gallery = props => {
 			interval="4500">
 			<div className="h-100">
 				<img
+					className="img-fluid rounded mx-auto d-block w-100"
+					src={AKG_Home2}
+					alt="Third slide"
+					style={{
+						maxHeight: "700px",
+						minHeight: "300px",
+						transform: `translateY(${offset * 0.5}px)`
+					}}
+				/>
+				<p className="infoBanner" style={{ lineHeight: "150%" }}>
+					AKG Installs, Manitaines and Repairs <br />
+					<u>ANY</u> Roof in Florida! <br />
+					Get Your Free Quote Today!
+				</p>
+			</div>
+			<div className="h-100">
+				<img
 					className="img-fluid rounded mx-auto d-block w-100 h-100"
 					src={AKG_Home}
 					alt="First slide"
@@ -54,25 +71,6 @@ export const Gallery = props => {
 			<div className="h-100">
 				<img
 					className="img-fluid rounded mx-auto d-block w-100"
-					src={AKG_Home2}
-					alt="Third slide"
-					style={{
-						maxHeight: "700px",
-						minHeight: "300px",
-						transform: `translateY(${offset * 0.5}px)`
-					}}
-				/>
-				<p className="infoBanner2" style={{ lineHeight: "150%" }}>
-					AKG Installs, Manitaines and Repairs <br />
-					Dimensional and 3 tab Shingle <br />
-					Barrel and Flat Tile <br />
-					Silicone Sealed Flat <br />
-					Metal <br />
-				</p>
-			</div>
-			<div className="h-100">
-				<img
-					className="img-fluid rounded mx-auto d-block w-100"
 					src={AKG_Home3}
 					alt="Third slide"
 					style={{
@@ -81,10 +79,13 @@ export const Gallery = props => {
 						transform: `translateY(${offset * 0.5}px)`
 					}}
 				/>
-				<p className="infoBanner" style={{ lineHeight: "150%" }}>
-					<i className="far fa-building" /> Commercial <br />
-					Faom and Solvent-Free Silicone Systems
+				<p className="infoBanner" style={{ lineHeight: "150%", top: "25%" }}>
+					Dimensional and 3 tab Shingle <br />
+					Barrel and Flat Tile <br />
+					Silicone Sealed Flat <br />
+					Metal <br />
 				</p>
+				<p>We Install it ALL!</p>
 			</div>
 		</Carousel>
 	);

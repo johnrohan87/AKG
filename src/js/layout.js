@@ -16,6 +16,8 @@ import { FeatureS1 } from "./component/feature_s1";
 import { FeatureS2 } from "./component/feature_s2";
 import { FeatureS8 } from "./component/feature_s8";
 import { SlideUpBox } from "./component/slide_up_box";
+import { CountUp } from "./component/count_up";
+import { CounterBar } from "./component/counter_bar";
 
 //create your first component
 const Layout = () => {

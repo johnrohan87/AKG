@@ -19,6 +19,7 @@ import { useEffect, useState, useContext } from "react";
 import { Context } from "../store/appContext";
 
 import "animate.css/animate.css";
+import { CounterBar } from "../component/counter_bar";
 
 var navHeight = 0;
 
@@ -75,6 +76,7 @@ export const Home = () => {
 			</div>
 			<FeatureS7 />
 			<FeatureS1 props={offset} />
+			<CounterBar />
 		</div>
 	);
 };

@@ -31,6 +31,8 @@ import { AnimateOnChange, HideUntilLoaded, animations } from "react-animation";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import { CountUp } from "./count_up";
+
 export const FeatureS1 = props => {
 	const [offset, setOffset] = useState(0);
 	const [action, setAction] = useState("");
@@ -53,7 +55,7 @@ export const FeatureS1 = props => {
 
 		refFirestone.current.style.animation = "animations.fadeInUp";
 	}
-
+	//box3
 	return (
 		<section className="features-section-1 relative" id="features">
 			<div className="container mt-40">
@@ -63,7 +65,9 @@ export const FeatureS1 = props => {
 						<div className="box3">
 							<img className="img-fluid" src={AKG_Plastic} />
 							<div className="box-content">
-								<h3 className="title">Williamson</h3>
+								<h3 className="title">
+									Williamson <CountUp />
+								</h3>
 								<span className="post">Web Developer</span>
 								<p className="description">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur
