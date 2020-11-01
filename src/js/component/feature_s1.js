@@ -6,6 +6,7 @@ import BG4 from "../../img/background-4.jpg";
 import Home3 from "../../img/AKG_home3.jpg";
 import AKG_Metal from "../../img/AKG_metal.jpg";
 import AKG_Slats from "../../img/AKG_Slats.jpg";
+import AKG_Shingles from "../../img/AKG_Shingles.jpg";
 import AKG_Plastic from "../../img/AKG_plastic.jpg";
 import AKG_Tiles from "../../img/AKG_tiles.jpg";
 import AKG_Tiles2 from "../../img/AKG_tiles2.jpg";
@@ -65,9 +66,7 @@ export const FeatureS1 = props => {
 						<div className="box3">
 							<img className="img-fluid" src={AKG_Plastic} />
 							<div className="box-content">
-								<h3 className="title">
-									Williamson <CountUp />
-								</h3>
+								<h3 className="title">Williamson</h3>
 								<span className="post">Web Developer</span>
 								<p className="description">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci pariatur
@@ -132,7 +131,7 @@ export const FeatureS1 = props => {
 				<div
 					className="container"
 					style={{
-						backgroundImage: "url(" + AKG_Slats + ")",
+						backgroundImage: "url(" + AKG_Shingles + ")",
 						backgroundColor: "black",
 						backgroundPosition: "0px " + offset * 0.2 + "px",
 						transition: "transform 250ms ease-in",

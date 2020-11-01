@@ -10,6 +10,8 @@ import AKG_Home from "../../img/AKG_home.jpg";
 import AKG_Home2 from "../../img/AKG_home2.jpg";
 import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
+import AKG_BG1 from "../../img/AKG_BG1.jpg";
+import AKG_BG2 from "../../img/AKG_BG2-3.png";
 
 export const Gallery = props => {
 	const [offset, setOffset] = useState(props["props"]);
@@ -37,7 +39,7 @@ export const Gallery = props => {
 			<div className="h-100">
 				<img
 					className="img-fluid rounded mx-auto d-block w-100"
-					src={AKG_Home2}
+					src={AKG_BG1}
 					alt="Third slide"
 					style={{
 						maxHeight: "700px",
@@ -54,7 +56,7 @@ export const Gallery = props => {
 			<div className="h-100">
 				<img
 					className="img-fluid rounded mx-auto d-block w-100 h-100"
-					src={AKG_Home}
+					src={AKG_BG2}
 					alt="First slide"
 					style={{
 						maxHeight: "700px",
@@ -84,8 +86,8 @@ export const Gallery = props => {
 					Barrel and Flat Tile <br />
 					Silicone Sealed Flat <br />
 					Metal <br />
+					We Install it ALL!
 				</p>
-				<p>We Install it ALL!</p>
 			</div>
 		</Carousel>
 	);

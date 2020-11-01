@@ -16,10 +16,10 @@ import VisibilitySensor from "react-visibility-sensor";
 
 let firstRun = true;
 
-export const CountUp = ({ props }) => {
+export const CountUp = ({ props, CountTo }) => {
 	let { countUp, start, pauseResume, reset, update } = useCountUp({
 		start: 0,
-		end: 150567,
+		end: CountTo ? CountTo : 150567,
 		delay: 1000,
 		duration: 5,
 		separator: ",",
@@ -37,11 +37,12 @@ export const CountUp = ({ props }) => {
 	return (
 		<div>
 			<VisibilitySensor onChange={start} className="">
-				<div>{countUp}</div>
+				<div>{countUp}+</div>
 			</VisibilitySensor>
 		</div>
 	);
 };
 CountUp.propTypes = {
-	props: PropTypes.any
+	props: PropTypes.any,
+	CountTo: PropTypes.any
 };

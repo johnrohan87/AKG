@@ -75,8 +75,8 @@ export const Home = () => {
 				<HeaderSection />
 			</div>
 			<FeatureS7 />
-			<FeatureS1 props={offset} />
 			<CounterBar />
+			<FeatureS1 props={offset} />
 		</div>
 	);
 };

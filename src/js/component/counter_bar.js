@@ -4,11 +4,13 @@ import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
 import BG4 from "../../img/background-4.jpg";
 import Home3 from "../../img/AKG_home3.jpg";
+import HomeIcon from "../../img/Home-Icon.png";
 import AKG_Metal from "../../img/AKG_metal.jpg";
 import AKG_Slats from "../../img/AKG_Slats.jpg";
 import AKG_Plastic from "../../img/AKG_plastic.jpg";
 import AKG_Tiles from "../../img/AKG_tiles.jpg";
 import AKG_Tiles2 from "../../img/AKG_tiles2.jpg";
+import AKG_Thinking from "../../img/AKG_Thinking.png";
 import Firestone_Hat from "../../img/Firestone/Firestone_Hat.png";
 import Firestone_Hat2 from "../../img/Firestone/Firestone_Hat2.png";
 import Firestone_Logo from "../../img/Firestone/Firestone_Logo.png";
@@ -51,36 +53,36 @@ export const CounterBar = () => {
 		<section className="features-section-1 relative" id="features">
 			<div className="container-fluid p-5">
 				<Row>
-					<Col>
+					<Col className="col-md-4 col-sm-12 col-xs-12">
 						<Card style={{ width: "18rem" }}>
 							<Card.Body>
 								<Card.Title>
-									<i className="fas fa-home fa-5x" />
-									<CountUp />
+									<img src={HomeIcon} style={{ maxWidth: "100px" }} />
+									<CountUp CountTo={150000} />
 								</Card.Title>
 								<Card.Text>Roofs Repaired by AKG</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
-					<Col>
+					<Col className="col-md-4 col-sm-12 col-xs-12">
 						<Card style={{ width: "18rem" }}>
 							<Card.Body>
 								<Card.Title>
-									<i className="fas fa-home fa-5x" />
-									<CountUp />
+									<img src={AKG_Thinking} style={{ maxWidth: "100px" }} />
+									<CountUp CountTo={75} />
 								</Card.Title>
-								<Card.Text>Roofs Repaired by AKG</Card.Text>
+								<Card.Text>Years of experience</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
-					<Col>
+					<Col className="col-md-4 col-sm-12 col-xs-12">
 						<Card style={{ width: "18rem" }}>
 							<Card.Body>
 								<Card.Title>
 									<i className="fas fa-home fa-5x" />
-									<CountUp />
+									<CountUp CountTo={13207} />
 								</Card.Title>
-								<Card.Text>Roofs Repaired by AKG</Card.Text>
+								<Card.Text>Roofs Installed by AKG</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
