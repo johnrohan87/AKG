@@ -6,14 +6,14 @@ import Homes from "../../img/AKG_homes.jpg";
 
 export const FeatureS7 = () => {
 	return (
-		<section className="features-section-7 content-half">
+		<section className="features-section-7 content-half p-0">
 			<div className="container-half container-half-left" />
 			<div
 				className="container-half container-half-right cover"
 				style={{ backgroundImage: "url(" + Homes + ")" }}
 			/>
 
-			<div className="container" style={{ backgroundColor: "rgb(65, 196, 221,0.5)" }}>
+			<div className="container mx-auto" style={{ backgroundColor: "rgb(65, 196, 221,0.5)" }}>
 				<div className="row section-separator text-left animate__animated animate__bounce">
 					<div className="col-md-12 col-lg-6">
 						<div className="inner">

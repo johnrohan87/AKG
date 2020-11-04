@@ -6,6 +6,8 @@ import BG4 from "../../img/background-4.jpg";
 import Home3 from "../../img/AKG_home3.jpg";
 import HomeIcon from "../../img/Home-Icon.png";
 import AKG_BlueRibbon from "../../img/AKG_BlueRibbon.png";
+import AKG_ThumbUp from "../../img/AKG_ThumbUp.png";
+import AKG_HomeIcon from "../../img/AKG_Home_Icon.png";
 import AKG_Metal from "../../img/AKG_metal.jpg";
 import AKG_Slats from "../../img/AKG_Slats.jpg";
 import AKG_Plastic from "../../img/AKG_plastic.jpg";
@@ -54,22 +56,38 @@ export const CounterBar = () => {
 		<section className="features-section-1 relative" id="features">
 			<div className="container-fluid p-5">
 				<Row>
-					<Col className="col-md-4 col-sm-12 col-xs-12">
-						<Card style={{ width: "18rem" }}>
+					<Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<Card className="w-100" style={{ minHeight: "220px" }}>
 							<Card.Body>
 								<Card.Title>
-									<img src={HomeIcon} style={{ maxWidth: "100px" }} />
+									<img
+										src={AKG_HomeIcon}
+										style={{
+											maxWidth: "100px",
+											maxHeight: "100px",
+											minHeight: "100px",
+											minWidth: "100px"
+										}}
+									/>
 									<CountUp CountTo={150000} />
 								</Card.Title>
 								<Card.Text>Roofs Repaired by AKG</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
-					<Col className="col-md-4 col-sm-12 col-xs-12">
-						<Card style={{ width: "18rem" }}>
+					<Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<Card className="w-100" style={{ minHeight: "220px" }}>
 							<Card.Body>
 								<Card.Title>
-									<img src={AKG_Thinking} style={{ maxWidth: "100px" }} />
+									<img
+										src={AKG_BlueRibbon}
+										style={{
+											maxWidth: "100px",
+											maxHeight: "100px",
+											minHeight: "100px",
+											minWidth: "100px"
+										}}
+									/>
 
 									<CountUp CountTo={75} />
 								</Card.Title>
@@ -77,11 +95,19 @@ export const CounterBar = () => {
 							</Card.Body>
 						</Card>
 					</Col>
-					<Col className="col-md-4 col-sm-12 col-xs-12">
-						<Card style={{ width: "18rem" }}>
+					<Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<Card className="w-100" style={{ minHeight: "220px" }}>
 							<Card.Body>
 								<Card.Title>
-									<img src={AKG_BlueRibbon} style={{ maxWidth: "100px", maxHeight: "100px" }} />
+									<img
+										src={AKG_ThumbUp}
+										style={{
+											maxWidth: "100px",
+											maxHeight: "100px",
+											minHeight: "100px",
+											minWidth: "100px"
+										}}
+									/>
 									<CountUp CountTo={13207} />
 								</Card.Title>
 								<Card.Text>Satisfied Customers</Card.Text>

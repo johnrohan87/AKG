@@ -2,8 +2,10 @@
 
 
 @font-face {
-  font-family: 'ChristopherHand';
-  src: local('ChristopherHand'), url(../Font/comesinhandy.ttf) format('truetype');
+  //font-family: 'ChristopherHand';
+  //src: local('ChristopherHand'), url(../Font/comesinhandy.ttf) format('truetype');
+  font-family: 'Verdana';
+  src: local('Verdana'), url(../Font/verdana.ttf) format('truetype');
 }
 
 .roll-appear{
@@ -64,7 +66,7 @@ div > .centeredIMGp{
             //border: 3px solid #73AD21;
             transition: (all, 0.5s, ease-in-out);
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             margin-left: -45%;
             width: 90%;
@@ -278,8 +280,9 @@ div > .centeredIMGp{
  *  Defult CSS 
  * ===============================
  */
+  //font-family: "Iowan Old Style";
 body {
-  font-family: "Iowan Old Style";
+  font-family: "Verdana";
   color: rgba(88, 88, 88, 0.8);
   font-size: 16px;
   font-style: none;
@@ -293,7 +296,7 @@ a {
   text-decoration: none !important;
   display: inline-block;
   cursor: pointer;
-  font-family: "Iowan Old Style";
+  font-family: "Verdana";
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -342,7 +345,7 @@ a:focus {
   left: 0;
 }
 p {
-  font-family: "Iowan Old Style";
+  font-family: "Verdana";
   color: rgba(88, 88, 88, 0.8);
   font-size: 16px;
   line-height: 25px;
@@ -1124,7 +1127,8 @@ h6 {
  * ===============================
 */
 .bg-image-1 {
-  background: url(../img/AKG_home.jpg);
+  //background: url(../img/AKG_home.jpg);
+  background-color: rgba(255, 255, 255, .0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1132,7 +1136,7 @@ h6 {
   background-position: 50% 50%;
   background-attachment: initial;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  //background-color: #ffffff;
 }
 .header-section-1 .logo-link {
   max-width: 50px;
@@ -1317,7 +1321,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 .pricing-table .each-table .inner .meta-price {
-  font-family: 'Lato', "Iowan Old Style";
+  font-family: 'Lato', 'Verdana';
   font-size: 70px;
   font-weight: 200;
   line-height: 70px;

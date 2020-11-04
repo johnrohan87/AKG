@@ -50,16 +50,8 @@ export const FeatureS1 = props => {
 		[props["props"]]
 	);
 
-	function onChange(isVisible) {
-		//console.log("action changed to -", action);
-		action ? setAction("animations.fadeInUp") : setAction("animations.fadeInUp");
-
-		refFirestone.current.style.animation = "animations.fadeInUp";
-	}
-	//box3
-	return (
-		<section className="features-section-1 relative" id="features">
-			<div className="container mt-40">
+	/*
+    <div className="container mt-40">
 				<h3 className="text-center my-5">Accomplishments</h3>
 				<div className="row mt-30">
 					<div className="col-md-4 col-sm-6">
@@ -127,6 +119,17 @@ export const FeatureS1 = props => {
 					</div>
 				</div>
 			</div>
+    */
+
+	function onChange(isVisible) {
+		//console.log("action changed to -", action);
+		action ? setAction("animations.fadeInUp") : setAction("animations.fadeInUp");
+
+		refFirestone.current.style.animation = "animations.fadeInUp";
+	}
+	//box3
+	return (
+		<section className="features-section-1 relative" id="features">
 			<div className="container-fluid">
 				<div
 					className="container"
@@ -276,7 +279,7 @@ export const FeatureS1 = props => {
 										<br />
 										<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 											<div className="title" style={{ wordWrap: "break-word" }}>
-												Roof Foam and Solvent-Free Silicone Systems
+												Foam and Silicone Systems
 											</div>
 										</h5>
 										<br />
