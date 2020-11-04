@@ -41,30 +41,51 @@ export const HeaderSection = () => {
 									</div>
 								</div>
 								<div className="p-3">
-									<Form.Row>
-										<Form.Label column="lg" lg={4}>
-											Your Name
-										</Form.Label>
+									<Form.Row className="py-1">
+										{/*<Form.Label column="lg" lg={4}>
+											Name
+                                        </Form.Label>*/}
 										<Col>
-											<Form.Control size="lg" type="text" placeholder="" />
+											<Form.Control size="lg" type="text" placeholder="Name" />
+										</Col>
+									</Form.Row>
+									<Form.Row className="py-1">
+										{/*
+										<Form.Label column="lg" lg={4}>
+											Email
+										</Form.Label>*/}
+										<Col>
+											<Form.Control size="lg" type="text" placeholder="Email" />
+										</Col>
+									</Form.Row>
+
+									<Form.Row className="py-1">
+										<Col>
+											<Form.Control size="lg" type="text" placeholder="Phone Number" />
 										</Col>
 									</Form.Row>
 									<br />
 									<Form.Row>
-										<Form.Label column="lg" lg={4}>
-											Address, City/Town, Zip
-										</Form.Label>
 										<Col>
-											<Form.Control size="lg" type="text" as="textarea" placeholder="" rows={2} />
+											<Form.Control
+												size="lg"
+												type="text"
+												as="textarea"
+												placeholder="Address, City/Town, Zip"
+												rows={2}
+											/>
 										</Col>
 									</Form.Row>
 									<br />
 									<Form.Row>
-										<Form.Label column="lg" lg={4}>
-											Message
-										</Form.Label>
 										<Col>
-											<Form.Control size="lg" type="text" as="textarea" placeholder="" rows={3} />
+											<Form.Control
+												size="lg"
+												type="text"
+												as="textarea"
+												placeholder="Urgent Information Here"
+												rows={3}
+											/>
 										</Col>
 									</Form.Row>
 									<br />

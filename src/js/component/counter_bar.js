@@ -5,6 +5,7 @@ import LogoDark from "../../img/logo-dark.png";
 import BG4 from "../../img/background-4.jpg";
 import Home3 from "../../img/AKG_home3.jpg";
 import HomeIcon from "../../img/Home-Icon.png";
+import AKG_BlueRibbon from "../../img/AKG_BlueRibbon.png";
 import AKG_Metal from "../../img/AKG_metal.jpg";
 import AKG_Slats from "../../img/AKG_Slats.jpg";
 import AKG_Plastic from "../../img/AKG_plastic.jpg";
@@ -69,6 +70,7 @@ export const CounterBar = () => {
 							<Card.Body>
 								<Card.Title>
 									<img src={AKG_Thinking} style={{ maxWidth: "100px" }} />
+
 									<CountUp CountTo={75} />
 								</Card.Title>
 								<Card.Text>Years of experience</Card.Text>
@@ -79,10 +81,10 @@ export const CounterBar = () => {
 						<Card style={{ width: "18rem" }}>
 							<Card.Body>
 								<Card.Title>
-									<i className="fas fa-home fa-5x" />
+									<img src={AKG_BlueRibbon} style={{ maxWidth: "100px", maxHeight: "100px" }} />
 									<CountUp CountTo={13207} />
 								</Card.Title>
-								<Card.Text>Roofs Installed by AKG</Card.Text>
+								<Card.Text>Satisfied Customers</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>

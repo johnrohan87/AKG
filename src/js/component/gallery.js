@@ -12,6 +12,7 @@ import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
 import AKG_BG1 from "../../img/AKG_BG1.jpg";
 import AKG_BG2 from "../../img/AKG_BG2-3.png";
+import AKG_BarrelTile from "../../img/AKG_BarrelTile_Mod.png";
 
 export const Gallery = props => {
 	const [offset, setOffset] = useState(props["props"]);
@@ -73,7 +74,7 @@ export const Gallery = props => {
 			<div className="h-100">
 				<img
 					className="img-fluid rounded mx-auto d-block w-100"
-					src={AKG_Home3}
+					src={AKG_BarrelTile}
 					alt="Third slide"
 					style={{
 						maxHeight: "700px",
