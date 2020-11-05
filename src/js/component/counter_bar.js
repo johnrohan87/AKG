@@ -69,7 +69,7 @@ export const CounterBar = () => {
 											minWidth: "100px"
 										}}
 									/>
-									<CountUp CountTo={150000} />
+									<CountUp CountTo={75000} />
 								</Card.Title>
 								<Card.Text>Roofs Repaired by AKG</Card.Text>
 							</Card.Body>
@@ -89,7 +89,7 @@ export const CounterBar = () => {
 										}}
 									/>
 
-									<CountUp CountTo={75} />
+									<CountUp CountTo={39} />
 								</Card.Title>
 								<Card.Text>Years of experience</Card.Text>
 							</Card.Body>
@@ -108,7 +108,7 @@ export const CounterBar = () => {
 											minWidth: "100px"
 										}}
 									/>
-									<CountUp CountTo={13207} />
+									<CountUp CountTo={100000} />
 								</Card.Title>
 								<Card.Text>Satisfied Customers</Card.Text>
 							</Card.Body>

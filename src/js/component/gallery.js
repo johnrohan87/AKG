@@ -49,8 +49,8 @@ export const Gallery = props => {
 					}}
 				/>
 				<p className="infoBanner" style={{ lineHeight: "150%" }}>
-					AKG Installs, Manitaines and Repairs <br />
-					<u>ANY</u> Roof in Florida! <br />
+					Repairs, Replaces, and Maintains <br />
+					<u>YOUR</u> Life Investment! <br />
 					Get Your Free Quote Today!
 				</p>
 			</div>
@@ -68,7 +68,7 @@ export const Gallery = props => {
 				<p className="infoBanner" style={{ lineHeight: "150%" }}>
 					<i className="fas fa-home" /> Residential <br />
 					<i className="far fa-building" /> Commercial <br />
-					Customized Solutions for Your Needs!
+					Customized Solutions for Your Roofing Needs!
 				</p>
 			</div>
 			<div className="h-100">

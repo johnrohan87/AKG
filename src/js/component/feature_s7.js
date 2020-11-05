@@ -20,22 +20,21 @@ export const FeatureS7 = () => {
 							<h2 className="section-heading">AKG Roofing and Specialty Services, INC.</h2>
 							<div className="detail">
 								<p>
-									Joe Hernandez, has been a licensing contractor since 1977, licensed in Dade and
-									Broward county in 1981, and then state wide by 1987. Also became a home inspector in
-									2007.
-								</p>
-
-								<p>
-									With over 43 years of experience AKG stands by Honesty, Integrity, and Dignity
-									“Roofing is what we do” is our moto.
+									Joe Hernandez, has been a Licensed Roofing Contractor Since 1977, in Dade and
+									Broward county, and state wide by 1987. He also holds an active home inspection
+									license for over 20 years.
 								</p>
 								<p>
-									Joe Hernandez has been highley respected throughout the entire state of florida for
-									his knloedge and roofing evaluatins, by his piers and as a consultant.
+									With over 30 years of experience AKG stands by Honesty, Integrity, and Dignity
+									“Roofing is what we do” its our motto.
 								</p>
 								<p>
-									Each and every project is personaly supervised by Joe and is alwayse available on
-									his cell phone once you have engaged with AKG as your personilazed vendor.
+									Joe Hernandez has been highly respected throughout the entire state of florida for
+									his Knowledge and Roofing evaluations.
+								</p>
+								<p>
+									Each and every project is personally Supervised by Joe and he is always available on
+									timely fashion for your personalized needs.
 								</p>
 							</div>
 						</div>

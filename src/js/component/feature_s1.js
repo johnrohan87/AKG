@@ -236,7 +236,7 @@ export const FeatureS1 = props => {
 										<br />
 										<h5 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 											<div className="title" style={{ wordWrap: "break-word" }}>
-												EPDM TPO POLYISO
+												Silicone, Asphalt and more
 											</div>
 										</h5>
 										<br />
@@ -284,8 +284,8 @@ export const FeatureS1 = props => {
 										</h5>
 										<br />
 										<p className="description">
-											With superior durability, flexibility and UV resistance, RubberGard™ EPDM is
-											the smart roofing solution for any application.
+											Waterproofing and insulating products for commercial, industrial and
+											residential applications.
 										</p>
 									</div>
 								</div>

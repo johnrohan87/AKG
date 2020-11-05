@@ -83,7 +83,7 @@ export const HeaderSection = () => {
 												size="lg"
 												type="text"
 												as="textarea"
-												placeholder="Urgent Information Here"
+												placeholder="Reason For Inquiry"
 												rows={3}
 											/>
 										</Col>
