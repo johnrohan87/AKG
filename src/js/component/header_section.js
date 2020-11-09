@@ -5,6 +5,7 @@ import Logo from "../../img/logo.png";
 import LogoMotto from "../../img/AKG_Logo_Motto.png";
 import LogoDark from "../../img/logo-dark.png";
 import FreeQuote from "../../img/free-quote.jpg";
+import AKG_Call from "../../img/AKG_Call.png";
 
 import { useEffect } from "react";
 
@@ -22,19 +23,20 @@ export const HeaderSection = () => {
 		<section className="header-section-1 bg-image-1 header-js p-3" id="header">
 			<div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 				<div className="container">
-					<div className="d-flex row section-separator-line p-5">
+					<div className="d-flex row section-separator-line p-1">
 						<div className="col-xl-8 col-lg-8 col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-1 my-auto">
 							<div className="part-inner text-center">
-								<h1 className="p-3" style={{ color: "black" }}>
-									<div className="container-fluid">
-										<img src={LogoMotto} className="img-fluid rounded mx-auto" />
+								<h1 className="" style={{ color: "black" }}>
+									<div className="container-fluid p-0">
+										<img src={LogoMotto} className="img-fluid rounded w-100 h-100" />
+										<img src={AKG_Call} className="img-fluid py-5 rounded w-100 h-100" />
 									</div>
 								</h1>
 							</div>
 							<hr />
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
-							<Form.Group className="p-0">
+							<Form.Group className="w-100">
 								<div className="container-fluid p-0">
 									<div className="bg-primary p-3 border border-light">
 										<img src={FreeQuote} className="w-100" />
