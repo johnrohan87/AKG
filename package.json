@@ -76,6 +76,7 @@
 		"bootstrap": "^4.5.2",
 		"jquery": "^3.5.1",
 		"jssor-slider": "^28.0.0",
+		"now": "^21.0.1",
 		"prop-types": "^15.6.1",
 		"react": "^16.8.4",
 		"react-alice-carousel": "^1.19.3",
