@@ -7,7 +7,7 @@ import LogoDark from "../../img/logo-dark.png";
 import FreeQuote from "../../img/free-quote.jpg";
 import AKG_Call from "../../img/AKG_Call.png";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 //AKG Roofing and Specialty Services, INC.
 //<div className="detail" style={{ color: "black" }}>
@@ -19,6 +19,9 @@ import { useEffect } from "react";
 //</div>
 
 export const HeaderSection = () => {
+	const { name, email, phone, address, message } = useState("");
+	const handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
 	function encode(data) {
 		return Object.keys(data)
 			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -57,7 +60,8 @@ export const HeaderSection = () => {
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
 							<Form.Group className="w-100">
-								<form data-netlify="true" name="contact" method="post" onSubmit={handleSubmit}>
+								<form data-netlify="true" name="contact" method="post" onSubmit={e => handleSubmit()}>
+									<input type="hidden" name="form-name" value="contact" />
 									<div className="container-fluid p-0">
 										<div className="bg-primary p-3 border border-light">
 											<img src={FreeQuote} className="w-100" />
@@ -69,7 +73,14 @@ export const HeaderSection = () => {
 											Name
                                         </Form.Label>*/}
 											<Col>
-												<Form.Control size="lg" type="text" placeholder="Name" name="name" />
+												<Form.Control
+													size="lg"
+													type="text"
+													placeholder="Name"
+													name="name"
+													value={name}
+													onChange={e => handleChange()}
+												/>
 											</Col>
 										</Form.Row>
 										<Form.Row className="py-1">
@@ -78,7 +89,14 @@ export const HeaderSection = () => {
 											Email
 										</Form.Label>*/}
 											<Col>
-												<Form.Control size="lg" type="text" placeholder="Email" name="email" />
+												<Form.Control
+													size="lg"
+													type="text"
+													placeholder="Email"
+													name="email"
+													value={email}
+													onChange={e => handleChange()}
+												/>
 											</Col>
 										</Form.Row>
 
@@ -88,7 +106,9 @@ export const HeaderSection = () => {
 													size="lg"
 													type="text"
 													placeholder="Phone Number"
-													name="phone number"
+													name="phone"
+													vlaue={phone}
+													onChange={e => handleChange()}
 												/>
 											</Col>
 										</Form.Row>
@@ -102,6 +122,8 @@ export const HeaderSection = () => {
 													placeholder="Address, City/Town, Zip"
 													rows={2}
 													name="address"
+													value={address}
+													onChange={e => handleChange()}
 												/>
 											</Col>
 										</Form.Row>
@@ -114,7 +136,9 @@ export const HeaderSection = () => {
 													as="textarea"
 													placeholder="Reason For Inquiry"
 													rows={3}
-													name="reason"
+													name="message"
+													value={message}
+													onChange={e => handleChange()}
 												/>
 											</Col>
 										</Form.Row>
