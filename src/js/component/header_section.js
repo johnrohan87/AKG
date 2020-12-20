@@ -38,7 +38,7 @@ export const HeaderSection = () => {
 				...name
 			})
 		})
-			.then(() => alert("/thank-you/", event))
+			.then(event => alert("/thank-you/", event))
 			.catch(error => alert(error));
 	};
 
@@ -61,7 +61,6 @@ export const HeaderSection = () => {
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
 							<Form.Group className="w-100">
 								<form data-netlify="true" name="contact" method="post" onSubmit={e => handleSubmit()}>
-									<input type="hidden" name="form-name" value="contact" />
 									<div className="container-fluid p-0">
 										<div className="bg-primary p-3 border border-light">
 											<img src={FreeQuote} className="w-100" />
