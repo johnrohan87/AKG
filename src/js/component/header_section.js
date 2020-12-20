@@ -36,7 +36,8 @@ export const HeaderSection = () => {
 							<hr />
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
-							<Form.Group className="w-100" data-netlify="true" name="contact">
+							<Form.Group className="w-100" >
+                                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
 								<div className="container-fluid p-0">
 									<div className="bg-primary p-3 border border-light">
 										<img src={FreeQuote} className="w-100" />
@@ -97,6 +98,7 @@ export const HeaderSection = () => {
 										Submit
 									</Button>
 								</div>
+                                </Form>
 							</Form.Group>
 						</div>
 					</div>
