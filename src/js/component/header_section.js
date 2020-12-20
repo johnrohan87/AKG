@@ -39,8 +39,8 @@ export const HeaderSection = () => {
 				...name
 			})
 		})
-			.then(() => alert("Thank You!"))
-			.catch(error => alert(error));
+			.then(event => console.log("Thank You!", event))
+			.catch(error => console.log(error, event));
 	};
 
 	return (
