@@ -36,7 +36,7 @@ export const HeaderSection = () => {
 							<hr />
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
-							<Form.Group className="w-100">
+							<Form.Group className="w-100" data-netlify="true" name="contact">
 								<div className="container-fluid p-0">
 									<div className="bg-primary p-3 border border-light">
 										<img src={FreeQuote} className="w-100" />
@@ -48,7 +48,7 @@ export const HeaderSection = () => {
 											Name
                                         </Form.Label>*/}
 										<Col>
-											<Form.Control size="lg" type="text" placeholder="Name" />
+											<Form.Control size="lg" type="text" placeholder="Name" name="name" />
 										</Col>
 									</Form.Row>
 									<Form.Row className="py-1">
@@ -57,13 +57,13 @@ export const HeaderSection = () => {
 											Email
 										</Form.Label>*/}
 										<Col>
-											<Form.Control size="lg" type="text" placeholder="Email" />
+											<Form.Control size="lg" type="text" placeholder="Email" name="email" />
 										</Col>
 									</Form.Row>
 
 									<Form.Row className="py-1">
 										<Col>
-											<Form.Control size="lg" type="text" placeholder="Phone Number" />
+											<Form.Control size="lg" type="text" placeholder="Phone Number" name="phone number" />
 										</Col>
 									</Form.Row>
 									<br />
@@ -74,7 +74,8 @@ export const HeaderSection = () => {
 												type="text"
 												as="textarea"
 												placeholder="Address, City/Town, Zip"
-												rows={2}
+                                                rows={2}
+                                                name="address"
 											/>
 										</Col>
 									</Form.Row>
@@ -86,7 +87,8 @@ export const HeaderSection = () => {
 												type="text"
 												as="textarea"
 												placeholder="Reason For Inquiry"
-												rows={3}
+                                                rows={3}
+                                                name="reason"
 											/>
 										</Col>
 									</Form.Row>
