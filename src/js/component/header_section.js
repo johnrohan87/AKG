@@ -36,69 +36,74 @@ export const HeaderSection = () => {
 							<hr />
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
-							<Form.Group className="w-100" >
-                                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-								<div className="container-fluid p-0">
-									<div className="bg-primary p-3 border border-light">
-										<img src={FreeQuote} className="w-100" />
+							<Form.Group className="w-100">
+								<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+									<div className="container-fluid p-0">
+										<div className="bg-primary p-3 border border-light">
+											<img src={FreeQuote} className="w-100" />
+										</div>
 									</div>
-								</div>
-								<div className="p-3">
-									<Form.Row className="py-1">
-										{/*<Form.Label column="lg" lg={4}>
+									<div className="p-3">
+										<Form.Row className="py-1">
+											{/*<Form.Label column="lg" lg={4}>
 											Name
                                         </Form.Label>*/}
-										<Col>
-											<Form.Control size="lg" type="text" placeholder="Name" name="name" />
-										</Col>
-									</Form.Row>
-									<Form.Row className="py-1">
-										{/*
+											<Col>
+												<Form.Control size="lg" type="text" placeholder="Name" name="name" />
+											</Col>
+										</Form.Row>
+										<Form.Row className="py-1">
+											{/*
 										<Form.Label column="lg" lg={4}>
 											Email
 										</Form.Label>*/}
-										<Col>
-											<Form.Control size="lg" type="text" placeholder="Email" name="email" />
-										</Col>
-									</Form.Row>
+											<Col>
+												<Form.Control size="lg" type="text" placeholder="Email" name="email" />
+											</Col>
+										</Form.Row>
 
-									<Form.Row className="py-1">
-										<Col>
-											<Form.Control size="lg" type="text" placeholder="Phone Number" name="phone number" />
-										</Col>
-									</Form.Row>
-									<br />
-									<Form.Row>
-										<Col>
-											<Form.Control
-												size="lg"
-												type="text"
-												as="textarea"
-												placeholder="Address, City/Town, Zip"
-                                                rows={2}
-                                                name="address"
-											/>
-										</Col>
-									</Form.Row>
-									<br />
-									<Form.Row>
-										<Col>
-											<Form.Control
-												size="lg"
-												type="text"
-												as="textarea"
-												placeholder="Reason For Inquiry"
-                                                rows={3}
-                                                name="reason"
-											/>
-										</Col>
-									</Form.Row>
-									<br />
-									<Button variant="primary" type="submit">
-										Submit
-									</Button>
-								</div>
-                                </Form>
+										<Form.Row className="py-1">
+											<Col>
+												<Form.Control
+													size="lg"
+													type="text"
+													placeholder="Phone Number"
+													name="phone number"
+												/>
+											</Col>
+										</Form.Row>
+										<br />
+										<Form.Row>
+											<Col>
+												<Form.Control
+													size="lg"
+													type="text"
+													as="textarea"
+													placeholder="Address, City/Town, Zip"
+													rows={2}
+													name="address"
+												/>
+											</Col>
+										</Form.Row>
+										<br />
+										<Form.Row>
+											<Col>
+												<Form.Control
+													size="lg"
+													type="text"
+													as="textarea"
+													placeholder="Reason For Inquiry"
+													rows={3}
+													name="reason"
+												/>
+											</Col>
+										</Form.Row>
+										<br />
+										<Button variant="primary" type="submit">
+											Submit
+										</Button>
+									</div>
+								</form>
 							</Form.Group>
 						</div>
 					</div>
