@@ -18,6 +18,7 @@ import { FeatureS8 } from "./component/feature_s8";
 import { SlideUpBox } from "./component/slide_up_box";
 import { CountUp } from "./component/count_up";
 import { CounterBar } from "./component/counter_bar";
+import { ContactForm } from "./component/contact_form";
 
 //create your first component
 const Layout = () => {

@@ -6,6 +6,7 @@ import LogoMotto from "../../img/AKG_Logo_Motto.png";
 import LogoDark from "../../img/logo-dark.png";
 import FreeQuote from "../../img/free-quote.jpg";
 import AKG_Call from "../../img/AKG_Call.png";
+import ContactForm from "./contact_form";
 
 import { useEffect, useState } from "react";
 
@@ -20,7 +21,7 @@ import { useEffect, useState } from "react";
 
 export const HeaderSection = () => {
 	const { name, email, phone, address, message } = useState("");
-	const handleChange = e => this.setState({ [e.target.name]: e.target.value });
+	//const handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	function encode(data) {
 		return Object.keys(data)
@@ -61,7 +62,8 @@ export const HeaderSection = () => {
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
 							<Form.Group className="w-100">
-								<form netlify name="contact" onSubmit={e => handleSubmit()}>
+								<ContactForm />
+								{/* <form netlify name="contact" onSubmit={e => handleSubmit()}>
 									<div className="container-fluid p-0">
 										<div className="bg-primary p-3 border border-light">
 											<img src={FreeQuote} className="w-100" />
@@ -69,9 +71,7 @@ export const HeaderSection = () => {
 									</div>
 									<div className="p-3">
 										<Form.Row className="py-1">
-											{/*<Form.Label column="lg" lg={4}>
-											Name
-                                        </Form.Label>*/}
+											
 											<Col>
 												<Form.Control
 													size="lg"
@@ -84,10 +84,7 @@ export const HeaderSection = () => {
 											</Col>
 										</Form.Row>
 										<Form.Row className="py-1">
-											{/*
-										<Form.Label column="lg" lg={4}>
-											Email
-										</Form.Label>*/}
+											
 											<Col>
 												<Form.Control
 													size="lg"
@@ -147,7 +144,8 @@ export const HeaderSection = () => {
 											Submit
 										</Button>
 									</div>
-								</form>
+                                </form>
+                                */}
 							</Form.Group>
 						</div>
 					</div>
