@@ -20,30 +20,6 @@ import { useEffect, useState } from "react";
 //</div>
 
 export const HeaderSection = () => {
-	const { name, email, phone, address, message } = useState("");
-	//const handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
-	function encode(data) {
-		return Object.keys(data)
-			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-			.join("&");
-	}
-
-	const handleSubmit = event => {
-		event.preventDefault();
-		alert(event);
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({
-				"form-name": event.target.getAttribute("name"),
-				...name
-			})
-		})
-			.then(() => navigate("/"))
-			.catch(error => console.log(error, event));
-	};
-
 	return (
 		<section className="header-section-1 bg-image-1 header-js p-3" id="header">
 			<div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>

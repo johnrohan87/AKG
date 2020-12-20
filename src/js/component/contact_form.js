@@ -36,7 +36,7 @@ export default class ContactForm extends React.Component {
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			body: encode({ "form-name": "contact", ...this.state })
 		})
-			.then(() => alert("Success!"))
+			.then(e => alert("Success!", e))
 			.catch(error => alert(error));
 
 		e.preventDefault();
@@ -47,7 +47,7 @@ export default class ContactForm extends React.Component {
 	render() {
 		const { name, email, message } = this.state;
 		return (
-			<form onSubmit={this.handleSubmit}>
+			<form netlify onSubmit={this.handleSubmit}>
 				<p>
 					<label>
 						Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
