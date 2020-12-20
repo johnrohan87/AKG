@@ -38,7 +38,7 @@ export const HeaderSection = () => {
 				...name
 			})
 		})
-			.then(() => navigate("/thank-you/"))
+			.then(() => alert("/thank-you/", event))
 			.catch(error => alert(error));
 	};
 
