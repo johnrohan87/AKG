@@ -30,6 +30,7 @@ export const HeaderSection = () => {
 
 	const handleSubmit = event => {
 		event.preventDefault();
+		alert(event);
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -38,7 +39,7 @@ export const HeaderSection = () => {
 				...name
 			})
 		})
-			.then(event => alert("/thank-you/", event))
+			.then(() => alert("Thank You!"))
 			.catch(error => alert(error));
 	};
 
