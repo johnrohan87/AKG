@@ -19,6 +19,26 @@ import { useEffect } from "react";
 //</div>
 
 export const HeaderSection = () => {
+	function encode(data) {
+		return Object.keys(data)
+			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+			.join("&");
+	}
+
+	const handleSubmit = event => {
+		event.preventDefault();
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({
+				"form-name": event.target.getAttribute("name"),
+				...name
+			})
+		})
+			.then(() => navigate("/thank-you/"))
+			.catch(error => alert(error));
+	};
+
 	return (
 		<section className="header-section-1 bg-image-1 header-js p-3" id="header">
 			<div style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
@@ -37,7 +57,7 @@ export const HeaderSection = () => {
 						</div>
 						<div className="border border-light bg-white col-xl-4 col-lg-4 col-md-12 col-sm-12 p-0">
 							<Form.Group className="w-100">
-								<form netlify name="contact" method="post">
+								<form data-netlify="true" name="contact" method="post" onSubmit={handleSubmit}>
 									<div className="container-fluid p-0">
 										<div className="bg-primary p-3 border border-light">
 											<img src={FreeQuote} className="w-100" />
