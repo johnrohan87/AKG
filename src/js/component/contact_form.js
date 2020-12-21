@@ -46,13 +46,12 @@ export default class ContactForm extends React.Component {
 		const { name, email, message } = this.state;
 		return (
 			<form
-				action="/"
-				netlify
+				name="contact"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
 				method="post"
 				onSubmit={this.handleSubmit}>
-				<input type="hidden" name="form-name" value="contact" />
+				
 				<p>
 					<label>
 						Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
