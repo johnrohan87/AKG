@@ -51,7 +51,6 @@ export default class ContactForm extends React.Component {
 				data-netlify-honeypot="bot-field"
 				method="post"
 				onSubmit={this.handleSubmit}>
-				
 				<p>
 					<label>
 						Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
