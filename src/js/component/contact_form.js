@@ -29,7 +29,7 @@ export default class ContactForm extends React.Component {
 	}
 
 	handleSubmit = e => {
-		e.preventDefault();
+		//e.preventDefault();
 		var oForm = document.forms["contact"];
 		console.log(oForm);
 
