@@ -29,8 +29,6 @@ export default class ContactForm extends React.Component {
 	}
 
 	handleSubmit = e => {
-		var oForm = document.forms["contact"];
-		console.log(oForm);
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -42,27 +40,38 @@ export default class ContactForm extends React.Component {
 		e.preventDefault();
 	};
 
+	handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
 	render() {
+		const { name, email, message } = this.state;
 		return (
-			<form name="contact" method="post" data-netlify="true" onSubmit={this.handleSubmit}>
+			<form
+				name="contact"
+				method="post"
+				action="/home"
+				netlify
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+				onSubmit={this.handleSubmit}>
+				<input type="hidden" name="form-name" value="contact" />
 				<p hidden>
 					<label>
-						Don’t fill this out: <input name="bot-field" />
+						Don’t fill this out: <input name="bot-field" onChange={this.handleChange} />
 					</label>
 				</p>
 				<p>
 					<label>
-						Your Name: <input type="text" name="name" />
+						Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
 					</label>
 				</p>
 				<p>
 					<label>
-						Your Email: <input type="email" name="email" />
+						Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
 					</label>
 				</p>
 				<p>
 					<label>
-						Message: <textarea name="message" />
+						Message: <textarea name="message" value={message} onChange={this.handleChange} />
 					</label>
 				</p>
 				<p>
