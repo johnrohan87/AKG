@@ -29,7 +29,7 @@ export default class ContactForm extends React.Component {
 	}
 
 	handleSubmit = e => {
-		fetch("/", {
+		fetch("/home", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			body: encode({ ...this.state })
