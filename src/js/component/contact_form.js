@@ -29,8 +29,10 @@ export default class ContactForm extends React.Component {
 	}
 
 	handleSubmit = e => {
+		e.preventDefault();
 		var oForm = document.forms["contact"];
 		console.log(oForm);
+
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
