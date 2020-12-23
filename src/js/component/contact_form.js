@@ -70,7 +70,11 @@ class ContactForm extends React.Component {
 	render() {
 		const { name, email, phone, address, message } = this.state;
 		return (
-			<form netlify-honeypot="bot-field" data-netlify="true" onSubmit={this.handleSubmit}>
+			<form
+				netlify-honeypot="bot-field"
+				data-netlify="true"
+				data-netlify-recaptcha="true"
+				onSubmit={this.handleSubmit}>
 				<p className="hidden" hidden="true">
 					<label>
 						Don’t fill this out if you’re human: <input name="bot-field" />
@@ -151,6 +155,7 @@ class ContactForm extends React.Component {
 						</Col>
 					</Form.Row>
 					<br />
+					<div data-netlify-recaptcha="true" />
 					<Button variant="primary" type="submit">
 						Submit
 					</Button>
