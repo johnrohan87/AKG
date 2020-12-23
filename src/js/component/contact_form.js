@@ -81,7 +81,12 @@ class ContactForm extends React.Component {
 	render() {
 		const { name, email, phone, address, message } = this.state;
 		return (
-			<form name="contact" method="post" onSubmit={this.handleSubmit}>
+			<form
+				name="contact"
+				method="post"
+				data-netlify="true"
+				data-netlify-recaptcha="true"
+				onSubmit={this.handleSubmit}>
 				<div className="container-fluid p-0">
 					<div className="bg-primary p-3 border border-light">
 						<img src={FreeQuote} className="w-100" />
