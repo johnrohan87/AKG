@@ -38,6 +38,17 @@ import FreeQuote from "../../img/free-quote.jpg";
 					<button type="submit">Send</button>
                 </p> */
 }
+{
+	/*<form name="contact" netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+            <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="phone" name="phone" />
+      <input type="address" name="address" />
+      <textarea name="message"></textarea>
+      <div data-netlify-recaptcha="true" ></div>
+    </form> */
+}
 
 const encode = data => {
 	return Object.keys(data)
