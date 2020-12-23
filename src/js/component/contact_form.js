@@ -70,8 +70,7 @@ class ContactForm extends React.Component {
 	render() {
 		const { name, email, phone, address, message } = this.state;
 		return (
-			<form netlify name="contactAKG" onSubmit={this.handleSubmit}>
-				<input type="hidden" name="form-name" value="contactAKG" />
+			<form name="contactAKG" onSubmit={this.handleSubmit}>
 				<div className="container-fluid p-0">
 					<div className="bg-primary p-3 border border-light">
 						<img src={FreeQuote} className="w-100" />
