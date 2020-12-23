@@ -70,7 +70,13 @@ class ContactForm extends React.Component {
 	render() {
 		const { name, email, phone, address, message } = this.state;
 		return (
-			<form netlify onSubmit={this.handleSubmit}>
+			<form netlify-honeypot="bot-field" data-netlify="true" onSubmit={this.handleSubmit}>
+				<p className="hidden" hidden="true">
+					<label>
+						Don’t fill this out if you’re human: <input name="bot-field" />
+					</label>
+				</p>
+
 				<div className="container-fluid p-0">
 					<div className="bg-primary p-3 border border-light">
 						<img src={FreeQuote} className="w-100" />
