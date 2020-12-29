@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useContext, Component } from "react
 import { Link } from "react-router-dom";
 import Logo from "../../img/AKG_Logo.png";
 import LogoDark from "../../img/logo-dark.png";
+import FreeQuote from "../../img/free-quote.jpg";
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown, Col } from "react-bootstrap";
 import { Context } from "../store/appContext";
 
