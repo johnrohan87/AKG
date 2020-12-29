@@ -35,7 +35,7 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/.well-known/acme-challenge">
+						<Route exact path="/.well-known/acme-challenge/ilyAWHsoPw1EWKtB-xYP23sT-INyyl-Maz1HvVj87j4">
 							<Demo />
 						</Route>
 						<Route exact path="/single/:theid">
