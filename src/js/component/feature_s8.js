@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
-import BG4 from "../../img/background-4.jpg";
+
 import Proj1 from "../../img/project/1.jpg";
 import Proj2 from "../../img/project/2.jpg";
 import Proj3 from "../../img/project/3.jpg";

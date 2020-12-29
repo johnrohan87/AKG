@@ -1,5 +1,5 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+
 import "../../styles/home.scss";
 import { HeaderSection } from "../component/header_section";
 import { FeatureS7 } from "../component/feature_s7";

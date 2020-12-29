@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
-import BG4 from "../../img/background-4.jpg";
+
 import Video from "../../img/video.png";
 
 export const FeatureS2 = () => {

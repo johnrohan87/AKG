@@ -11,7 +11,7 @@ import AKG_Home2 from "../../img/AKG_home2.jpg";
 import AKG_Home3 from "../../img/AKG_home3.jpg";
 import AKG_Homes from "../../img/AKG_homes.jpg";
 import AKG_BG1 from "../../img/AKG_BG1.jpg";
-import AKG_BG2 from "../../img/AKG_BG2-3.png";
+import AKG_BG2 from "../../img/AKG_BG2.jpg";
 import AKG_BarrelTile from "../../img/AKG_BarrelTile_Mod.jpeg";
 
 export const Gallery = props => {

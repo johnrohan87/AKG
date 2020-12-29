@@ -4,7 +4,6 @@ import Logo from "../../img/AKG_Logo.png";
 import LogoDark from "../../img/logo-dark.png";
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown, Col } from "react-bootstrap";
 import { Context } from "../store/appContext";
-import FreeQuote from "../../img/free-quote.jpg";
 
 /*
 <Link to="/demo">

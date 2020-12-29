@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoMotto from "../../img/AKG_Logo_Motto.png";
 import LogoDark from "../../img/logo-dark.png";
-import FreeQuote from "../../img/free-quote.jpg";
+
 import AKG_Call from "../../img/AKG_Call.png";
 import ContactForm from "./contact_form";
 

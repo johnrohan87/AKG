@@ -2,18 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import LogoDark from "../../img/logo-dark.png";
-import BG4 from "../../img/background-4.jpg";
+
 import Home3 from "../../img/AKG_home3.jpg";
-import HomeIcon from "../../img/Home-Icon.png";
+
 import AKG_BlueRibbon from "../../img/AKG_BlueRibbon.png";
 import AKG_ThumbUp from "../../img/AKG_ThumbUp.png";
 import AKG_HomeIcon from "../../img/AKG_Home_Icon.png";
-import AKG_Metal from "../../img/AKG_metal.jpg";
 import AKG_Slats from "../../img/AKG_Slats.jpg";
-import AKG_Plastic from "../../img/AKG_plastic.jpg";
-import AKG_Tiles from "../../img/AKG_tiles.jpg";
-import AKG_Tiles2 from "../../img/AKG_tiles2.jpg";
-import AKG_Thinking from "../../img/AKG_Thinking.png";
 import Firestone_Hat from "../../img/Firestone/Firestone_Hat.png";
 import Firestone_Hat2 from "../../img/Firestone/Firestone_Hat2.png";
 import Firestone_Logo from "../../img/Firestone/Firestone_Logo.png";
