@@ -4,7 +4,6 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
-import { Test } from "./views/test";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -36,14 +35,16 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/.well-known/acme-challenge/wnuHCBPYhqacRLMc37xa4HUF0Z_IuMubr3Zop9Pm0fo">
-							<Test />
+						{/* 
+						<Route exact path="/.well-known/acme-challenge/:data">
+							<Demo />
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />
-						</Route>
+						</Route>*/}
 						<Route>
-							<h1>Not found!</h1>
+							{/*<h1>Not found!</h1>*/}
+							<Home />
 						</Route>
 					</Switch>
 					<Footer />
